@@ -1,0 +1,18 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+Exception: Sayer 'extned' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "lib/windows-i686/script.rpyc", line 49, in script
+  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 584, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 501, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'extned' is not defined.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.10.1227
+In Distorted Space 0.0

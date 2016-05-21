@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 28: end of line expected.
-    mc "Ok, sure":
-                 ^
+File "game/script.rpy", line 57: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."""
 
 Ren'Py Version: Ren'Py 6.99.10.1227
