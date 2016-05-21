@@ -22,7 +22,8 @@ $hp = 100
 
 # The game starts here.
 label start:
-    mc "Abandon all hope ye who enter here"
+    mc "Abandon all hope ye "
+    extend "who enter here"
 
     menu:
         "Ok, sure":
