@@ -13,12 +13,18 @@ define mc = Character("Main Character") #chhange this, add color
 define d = Character("Death")
 define gol = Character("Goddess of Life")
 define dk = Character("Dragon King")
+define c1 = Character("Companion 1")
+define c2 = Character("Companion 2")
+define gd = Character("Good Dragon")
+define pg = Character("Innkeeper")
 
 #various variable names, to be tested
 $male = False
 $lovepoints = 1
 $food = 0
 $hp = 100
+$time = 0
+$goodDragTown=False
 
 # The game starts here.
 label start:
@@ -27,9 +33,10 @@ label start:
 
     menu:
         "Ok, sure":
+            "wise choice"
             jump introduction
         "Nah":
-            jump otherend
+            jump crossroad
 
 label introduction:
     "Nobody really noticed when Death died."
@@ -55,7 +62,57 @@ label introduction:
     "Of course, behind all this, there were a few chinks needed smoothing out: the churches faced revolt, collapse - their afterlife was lost to them forever. There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
 
+    jump otherend
+
+label crossroad:
+    "You arrive at a crossroads. You see different roads branching to differnt parts of the region."
+    "One road, lined with trees, leads to a leafy jungle."
+    extend "Another road cobbled with stones leads to some looming cliffs."
+    extend "The final road follows a flowing river."
+
+    "In which direction do you wish to go?"
+    menu:      #add dialogue while travelling
+        "The Jungle":
+            "You decide to follow the leafy road."
+            $time = time + 1
+            jump gooddragons
+        "The Cliffs":
+            "You decide to follow thhe rocky road."
+            jump baddragons
+        "The Stream":
+            "You decide to follow the road next to the river."
+            jump refugeetown
+    jump otherend
+
+label refugeetown:
+    "You arrive at a modest but dilapidated town. It appears to be inhabited by humans"
+    c2 "Oh look! It's a town of people! It's been a while since we hmet other humans!"
+    c1 "Eh. This area looks lawless to me. We're probably going to get robbed and murdered in our sleep."
+    c2 "Well, at least we'll die in a comfortable bed instead of on the hard ground, I see an inn over there!"
+    mc "Agreed, we need a place to spend the night. The town may look sketchy, but the inn looks safe."
+
+    "Upon arriving in the inn, you are greeted by an attractive innkeeper."
+    pg "Welcome to my inn? You don't look like you're from around here."
+    mc "We would like a place to stay the night, along with some food."
+    pg "I can provide all that but it'll cost you this much."
+    c1 "What! That's outrageous! Why don't you just rob us instead?"
+    "Upon hearing this, the pirate girl pulls out a gun from under the counter and points it at the companion."
+    pg "if you don't like it, leave. However, good luck finding another honest inn like this one. Now pay me or get out."
+    mc "Please calm down. And you, be quiet. We'll gladly pay to stay here."
+    extend "With an innkeeper like you, this must be the safest place in town."
+    pg "Haha, I used to be a pirate back in the day, until \"that event\" happened."
+    pg "Well, actually I was kicked off for helping a stowaway."
+    pg "Past aside, here are your keys, it's been a pleasure doing "
+
     jump testend
+
+label baddragons:
+    "bad drags"
+    jump testend
+
+label gooddragons:
+    "good drags"
+    jump otherend
 
 label testend:
     d "You've reached the end of the game, congratulations"
