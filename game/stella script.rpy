@@ -157,7 +157,15 @@ label indistortedspace:
     "You are In Distorted Space,"
     extend " stuck In Broken Time."
     "You wander around blindly... Well as much as you could consider it 'wandering'"
+<<<<<<< HEAD:game/stella script.rpy
+    extend " It's more like swimming in some sort of jello. Your limbs feel heavy and given that you can't see anything, you can't actually tell if you're moving or not."
+    "And you slug on..."
+    extend " and on..."
+    extend " and on..."
+    extend " and on..."
+=======
     extend " It's more like swimming in some sort of "
+>>>>>>> origin/master:game/stella script.rpy
 
 label deadend:
     "The dragon eats you and you exist in its stomach acid for all of eternity."
