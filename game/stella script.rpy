@@ -5,6 +5,7 @@
 
 define gdr = Character("Good Dragon Ruler")
 define gdl = Character("Dragon Librarian")
+define death = Character("God of Death")
 
 label forest:
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
@@ -157,15 +158,33 @@ label indistortedspace:
     "You are In Distorted Space,"
     extend " stuck In Broken Time."
     "You wander around blindly... Well as much as you could consider it 'wandering'"
-<<<<<<< HEAD:game/stella script.rpy
     extend " It's more like swimming in some sort of jello. Your limbs feel heavy and given that you can't see anything, you can't actually tell if you're moving or not."
     "And you slug on..."
     extend " and on..."
     extend " and on..."
     extend " and on..."
-=======
-    extend " It's more like swimming in some sort of "
->>>>>>> origin/master:game/stella script.rpy
+    extend " and on..."
+    c2 "EEK! I bumped into something."
+    "\"Who has entered this dreary realm, the graveyard for gods?\""
+    c1 "More like we should be asking who YOU are."
+    mc "Relax c1. We are here to restore death."
+    "The figure laughes a slightly maniacal laugh. \"You what?\" Ahahahahaha"
+    "\"You all must be mad. Entirely mad.\""
+    "\"People search to banish death for ages, and within 20 years, people want to bring death back?\""
+    "\"Mad. Entirely mad. The entire lot of you.\""
+    death " I came here out of self-sacrifice and you humans are telling me that you want me BACK?"
+    extend " But you know what? I'll entertain you."
+    death "Luckily for you, this place is horribly uncomfortable and I'm getting quite bored."
+    death "So how are you going to get us out?"
+    mc "Uhhhhh... RIP WE DIDN'T THINK THAT FAR. (In fact, the writers of this plot did not think of that either)"
+    death "HAHAHA AS IF you mortals could possibly have that power."
+    extend " Please, of course I can get us out of here. I only stayed In Distorted Space because I thought that humanity wanted it."
+    death "Apparently in this day and age, humans don't even know how to appreciate my great self-sacrifice."
+    extend " But yes I'll come with you. Perhaps a touch of Death will make you remember how kind my actions were."
+    death "Let's begin. Brace yourselves."
+    death "I am the MIGHTY and ALL POWERFUL DEATH."
+    extend " TIME, hear my cry. The balance of the world must be restored."
+    extend " For in truth, "
 
 label deadend:
     "The dragon eats you and you exist in its stomach acid for all of eternity."
