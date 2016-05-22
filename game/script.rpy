@@ -3,7 +3,7 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 image bg test = ".jpg"
-image bg default = ".jpg"
+image bg default = "black.jpg"
 image bg forest = "forest.jpg"
 image bg treetop = "treetop.jpg"
 image bg abandonedvillage2 = "abandoned village.jpg"
@@ -15,6 +15,11 @@ image bg goodcityinterior2 = "good dragon city interior.jpg"
 image bg throneroom = "throneroom.jpg"
 image bg library2 = "library.jpg"
 image bg indistortedspace2 = "distorted space.jpg"
+image bg inn2 = "shop2.png"
+image bg refugeetown2 = "rivertown3.jpg"
+image bg crater = "Crater.png"
+image bg templeoftime2 = "templeoftime.png"
+image bg darktown = "darktown.jpg"
 
 image mc test = ".jpg"
 image mc defauklt = ".jpg"
@@ -43,6 +48,8 @@ $goodDragTown=False
 
 # The game starts here.
 label start:
+    scene bg black
+    with fade
     "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
@@ -68,7 +75,8 @@ label start:
     extend " The churches faced revolt, collapse - their afterlife was lost to them forever." 
     "There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
-    #insert bg here
+    scene bg darktown
+    with fade
     "They watch you among the maze of planks that’s Main Street."
     "Grime-filled eyes sifting through the forest of dirty men and women to stare, a horde of bodies lined up alongside the weed-choked road."
     "Since the end of Death, maintaining the City had become difficult."
@@ -97,6 +105,8 @@ label start:
     jump forest
 
 label crossroad:
+    scene bg crossroad2
+    with fade
     "You arrive at a crossroads. You see different roads branching to differnt parts of the region."
     "One road, lined with trees, leads to a leafy jungle."
     extend " Another road cobbled with stones leads to some looming cliffs."
@@ -116,12 +126,16 @@ label crossroad:
             jump refugeetown
 
 label refugeetown:
+    scene bg refugeetown2
+    with fade
     "You arrive at a modest but dilapidated town. It appears to be inhabited by humans"
     c2 "Oh look! It's a town of people! It's been a while since we hmet other humans!"
     c1 "Eh. This area looks lawless to me. We're probably going to get robbed and murdered in our sleep."
     c2 "Well, at least we'll die in a comfortable bed instead of on the hard ground, I see an inn over there!"
     mc "Agreed, we need a place to spend the night. The town may look sketchy, but the inn looks safe."
 
+    scene bg inn2
+    with fade
     "Upon arriving in the inn, you are greeted by an attractive innkeeper."
     pg "Welcome to my inn? You don't look like you're from around here."
     mc "We would like a place to stay the night, along with some food."
@@ -169,6 +183,8 @@ label gooddragons2:
     jump otherend
 
 label templeoftime:
+    scene bg templeoftime2
+    with fade
     "After a long and arduous travel, the party arrives at the location marked on the map."
     "Once there, the party is struck silent by the sight of an aging massive crater."
     c2 "What happened here?"
@@ -227,6 +243,7 @@ label templeoftime:
 
 label forest:
     scene bg forest
+    with fade
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
     "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
     mc "Well I guess we set off now!"
@@ -249,6 +266,7 @@ label forest:
         "Sleep in the trees": #maybe increase the time counter?
             #tree image
             scene bg treetop
+            with fade
             "You climb up onto a tree, and set up a hammock of sorts. It’s uncomfortable, but it’ll do."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             #abandoned city image
@@ -257,12 +275,14 @@ label forest:
         "Continue forward":
             #abandoned city image
             scene bg abandonedvillage2
+            with fade
             "You reach an abandoned village just before the sun sets. How lucky! The three of you find a house to sleep in and spend the night."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             jump abandonedvillage
             
 label abandonedvillage:
     scene bg abandonedvillage2
+    with fade
     "For the next few days, you wander around the area, making the abandoned village your base."
     extend " During one of those days, you find a shining rock and decide to take it for luck’s sake."
     "After several days with no leads, you are faced with the decision of continuing forwards, or staying at your mini basecamp and gathering supplies."
@@ -276,6 +296,7 @@ label abandonedvillage:
 
 label clearing:
     scene bg clearing2
+    with fade
     "Eventually, you reach a clearing. It has been a long day of journeying, and you and your companions are all tired."
     extend " Suddenly, a giant centipede attacks you!"
     #Insert picture of giant centipede
@@ -309,6 +330,7 @@ label gooddragons:
 
 label goodcityfront:
     scene bg goodcityfront2
+    with fade
     "Nevertheless, you decide to cautiously approach the city."
     "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
     menu:
@@ -323,10 +345,12 @@ label goodcityfront:
         
 label goodcityinterior:
     scene bg goodcityinterior2
+    with fade
     "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
     "You follow the gatekeeper towards what appears to be the center spire of the city."
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
     scene bg throneroom
+    with fade
     gdr "Hello tiny young ones."
     c2 "Wow! How are you talking to us?"
     gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
@@ -346,12 +370,14 @@ label goodcityinterior:
 
 label goodcitycenter:
     scene bg goodcityinterior2
+    with fade
     menu:
         "Fountain":
             "You see many dragons gathered around a giant fountain."
             jump goodcitycenter
         "Library":
             scene bg library2
+            with fade
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
             c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
@@ -378,6 +404,7 @@ label goodcitycenter:
 
 label indistortedspace:
     scene bg indistortedspace2
+    with fade
     "You feel like you are floating, yet CRUSHED by the pressure at the same time."
     extend " You are burning and freezing."
     extend " You are in pain, but also numb."
@@ -425,29 +452,41 @@ label indistortedspace:
         jump goodend
 
 label deadend:
+    scene bg black
+    with fade
     "The dragon eats you and you exist in its stomach acid for all of eternity."
     return
 
 label failend:
+    scene bg black
+    with fade
     "You failed. You took so long that by the time death was revived, the entire planetary ecosystem had collapsed. The dragons captured all the humans and placed them in farms."
     extend " The tenuous reliance by dragons on human farms for sustenance meant that when humans started dying again, the dragons died of starvation."
     "Every human on earth was hunted down until there were none left. And the remaining dragons scavenged for prey until they were driven to cannibalism."
     return
 
 label goodend:
+    scene bg black
+    with fade
     "With Death returning to the world, balance has been restored. The Dragons will mostly die out because they don't have enough sustenance."
     extend "Meanwhile, in the last stronghold of humanity there will be a decrease in population because the elderly and sick have died."
     "However, as per usual, the resilient race known as humanity will bounce back, and everything eventually returns to the status quo before In Broken Time."
     return
 
 label deocide:
+    scene bg black
+    with fade
     "gol dies"
     return
 
 label testend:
+    scene bg black
+    with fade
     d "You've reached the end of the game, congratulations"
     return
 
 label otherend:
+    scene bg black
+    with fade
     gol "This is the other end"
     return
