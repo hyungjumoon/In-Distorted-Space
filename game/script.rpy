@@ -13,8 +13,8 @@ define mc = Character("Main Character") #chhange this, add color
 define d = Character("Death")
 define gol = Character("Goddess of Life")
 define dk = Character("Dragon King")
-define c1 = Character("Companion 1")
-define c2 = Character("Companion 2")
+define c1 = Character("Tomo-kun")
+define c2 = Character("Tomo-chan")
 define gd = Character("Good Dragon")
 define pg = Character("Innkeeper")
 
@@ -67,8 +67,8 @@ label introduction:
 label crossroad:
     "You arrive at a crossroads. You see different roads branching to differnt parts of the region."
     "One road, lined with trees, leads to a leafy jungle."
-    extend "Another road cobbled with stones leads to some looming cliffs."
-    extend "The final road follows a flowing river."
+    extend " Another road cobbled with stones leads to some looming cliffs."
+    extend " The final road follows a flowing river."
 
     "In which direction do you wish to go?"
     menu:      #add dialogue while travelling
@@ -82,7 +82,6 @@ label crossroad:
         "The Stream":
             "You decide to follow the road next to the river."
             jump refugeetown
-    jump otherend
 
 label refugeetown:
     "You arrive at a modest but dilapidated town. It appears to be inhabited by humans"
@@ -99,12 +98,35 @@ label refugeetown:
     "Upon hearing this, the pirate girl pulls out a gun from under the counter and points it at the companion."
     pg "if you don't like it, leave. However, good luck finding another honest inn like this one. Now pay me or get out."
     mc "Please calm down. And you, be quiet. We'll gladly pay to stay here."
-    extend "With an innkeeper like you, this must be the safest place in town."
+    extend " With an innkeeper like you, this must be the safest place in town."
     pg "Haha, I used to be a pirate back in the day, until \"that event\" happened."
     pg "Well, actually I was kicked off for helping a stowaway."
-    pg "Past aside, here are your keys, it's been a pleasure doing "
+    pg "Past aside, here are your keys, it's been a pleasure doing business with you."
 
-    jump testend
+    "You spend a pleasant night at the inn after a simple but hearty dinner."
+    "You wake up in the morning and head to the fireplace in the lounge to warm up. You are joined by your companions"
+    "You begin discussing what to do next in your mission to unkill death."
+    
+    mc "We need to find a lead about where Death went or disappeared to"
+    c1 "There's no clues, we've been wandering aimlessly."
+    c2 "Well, we've travelled far and wide. It's better than being stuck inside those walls."
+
+    "Your innkeeper arrives with your breakfast of toast and marmalade."
+
+    pg "Sorry I couldn't help but overhear your conversatoin. You're looking for Death?"
+    c2 "It's none of your business."
+    "Tomo-kun looks like he would like to say more, but upon seeing the innkeeper reach down, he backs off."
+    mc "Do you have any information that might help?"
+    pg "Well, not really. However, remember the stowaway I helped?"
+    extend " After we were ousted from my ship, he went off with an acquaintance and I net either of them again."
+    c1 "Why does tha tmatter?"
+    pg "That was the day of the event. They coudln't have died. But I couldn't find them no matter how hard I looked."
+    pg "Furhtermore there was a flash of light from the area they went to. It all seems very mysterious doesn't it?"
+    mc "Given the date, yea, it is. Can you please tell us where they went?"
+    "The innkeeper gives you a map and marks the location."
+    mc "Thank you, you've been a good help, please take payment."
+    pg "It's fine, I've charged you enough as is. Go and fix this world."
+    jump templeoftime
 
 label baddragons:
     "bad drags"
@@ -112,6 +134,10 @@ label baddragons:
 
 label gooddragons:
     "good drags"
+    jump otherend
+
+label templeoftime:
+    "temple of time"
     jump otherend
 
 label testend:
