@@ -1,23 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 25, in <module>
-    image mc test flip = im.Flip ("test.png")
-Exception: im.Flip must be called with a true value for horizontal or vertical.
+  File "game/script.rpy", line 76, in <module>
+    $ hp = 100
+NameError: name 'dissovle' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/script.rpyc", line 25, in script
-  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 897, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "lib/windows-i686/script.rpyc", line 76, in script
+  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 1259, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 25, in <module>
-    image mc test flip = im.Flip ("test.png")
-  File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\display\im.py", line 778, in __init__
-    raise Exception("im.Flip must be called with a true value for horizontal or vertical.")
-Exception: im.Flip must be called with a true value for horizontal or vertical.
+  File "game/script.rpy", line 76, in <module>
+    $ hp = 100
+NameError: name 'dissovle' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227

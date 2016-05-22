@@ -21,30 +21,22 @@ image bg crater = "Crater.jpg"
 image bg templeoftime2 = "templeoftime.png"
 image bg darktown = "darktown.jpg"
 
-image mc test = "test.png"
-image mc test flip = im.Flip ("test.png")
-image mc defauklt = ".png"
-
+image default test = "test.png"
+image default flip = im.Flip ("test.png", horizontal=True)
 image mcg neu = "maingirl.png"
-image mcg neu flip = im.Flip ("maingirl.png")
-
+image mcg neu flip = im.Flip ("maingirl.png", horizontal=True)
 image desu neu = "death.png"
-image desu neu flip = im.Flip ("death.png")
-
+image desu neu flip = im.Flip ("death.png", horizontal=True)
 image mcb neu = "mainboy.png"
-image mcb neu flip = im.Flip ("mainboy.png")
-
+image mcb neu flip = im.Flip ("mainboy.png", horizontal=True)
 image inn neu = "innkeeper.png"
-image inn neu flip = im.Flip ("innkeeper.png")
-
+image inn neu flip = im.Flip ("innkeeper.png", horizontal=True)
 image life neu = "life.png"
-image life neu flip = im.Flip ("life.png")
-
+image life neu flip = im.Flip ("life.png", horizontal=True)
 image kun neu = "tomokun.png"
-image kun neu flip = im.Flip ("tomokun.png")
-
+image kun neu flip = im.Flip ("tomokun.png", horizontal=True)
 image chan neu = "tomochan.png"
-image chan neu flip = im.Flip ("tomochan.png")
+image chan neu flip = im.Flip ("tomochan.png", horizontal=True)
 
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
@@ -59,10 +51,18 @@ define gdr = Character("Good Dragon Ruler")
 define gdl = Character("Dragon Librarian")
 define death = Character("Death")
 
+# Transform declarations
+transform midleft:
+    ypos 0.4
+    xpos 0.0
+
+transform midright:
+    ypos 0.4
+    xpos 1.0
 
 # The game starts here.
 label start:
-#various variable names, to be tested
+    #various variable names, to be tested
     $ male = False
     $ lovepoints = 1
     $ food = 0
@@ -72,8 +72,8 @@ label start:
 
     scene bg black
     with fade
-    show mc test at right
-    with dissovle
+    show mcg neu at midright
+    with dissolve
     "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
@@ -101,7 +101,7 @@ label start:
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
     scene bg darktown
     with fade
-    show mc test flip at left
+    show mcg neu flip at midleft
     with dissolve
     "They watch you among the maze of planks that’s Main Street."
     "Grime-filled eyes sifting through the forest of dirty men and women to stare, a horde of bodies lined up alongside the weed-choked road."
