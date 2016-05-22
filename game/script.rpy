@@ -25,6 +25,27 @@ image mc test = "test.png"
 image mc test flip = im.Flip ("test.png")
 image mc defauklt = ".png"
 
+image mcg neu = "maingirl.png"
+image mcg neu flip = im.Flip ("maingirl.png")
+
+image desu neu = "death.png"
+image desu neu flip = im.Flip ("death.png")
+
+image mcb neu = "mainboy.png"
+image mcb neu flip = im.Flip ("mainboy.png")
+
+image inn neu = "innkeeper.png"
+image inn neu flip = im.Flip ("innkeeper.png")
+
+image life neu = "life.png"
+image life neu flip = im.Flip ("life.png")
+
+image kun neu = "tomokun.png"
+image kun neu flip = im.Flip ("tomokun.png")
+
+image chan neu = "tomochan.png"
+image chan neu flip = im.Flip ("tomochan.png")
+
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
 define gol = Character("Goddess of Life")
