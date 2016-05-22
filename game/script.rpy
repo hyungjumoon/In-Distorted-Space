@@ -42,6 +42,10 @@ image pd neu = "plotdevice.png"
 image pd neu flip = im.Flip ("plotdevice.png", horizontal=True)
 image boar neu = im.Flip ("boar.png", horizontal=True)
 image centipede neu = "centipede.png"
+image ck neu = "Centipede killer.png"
+image gdk neu = "gatekeeper.png"
+image gk neu = "dragonruler.png"
+image lib neu = "librarian.png"
 
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
@@ -89,6 +93,27 @@ transform centi:
     xanchor 0.7
     xpos 1.0
 
+transform ck1:
+    ypos 0.35
+    xanchor 0.7
+    xpos 1.0
+
+transform gate:
+    ypos 0.325
+    xanchor 0.5
+    xpos 1.0
+
+transform gking:
+    ypos 0.175
+    xanchor 0.7
+    xpos 1.0
+
+transform glib:
+    ypos 0.175
+    xanchor 0.7
+    xpos 1.0
+
+
 # The game starts here.
 label start:
     #various variable names, to be tested
@@ -99,7 +124,7 @@ label start:
     $ time = 0
     $ goodDragTown=False
     #chnage for test pruposes
-    jump goodcityinterior
+    jump goodcitycenter
 
 label introduction:
     scene bg black
@@ -482,7 +507,6 @@ label abandonedvillage:
             "After wandering for another several days and finding nothing of interest, you decide to continue on."
             jump clearing
 
-#hunting drag first
 label clearing:
     scene bg clearing2
     with fade
@@ -506,14 +530,22 @@ label clearing:
     
     "You try to fight back, but the three of you are exhausted. You are less so trying to attack, and more so trying not to get mauled."
     "A dragon SWOOPS in from the sky. The three of you cower in fear."
-    "Instead, the dragon grabs hold of the giant centipede, and you have been saved."
+    "Instead, the dragon grabs hold of the giant centipede, and you have been saved."       
     scene bg clearing2
     show kun neu flip at midleft #most left, facing right
     show chan neu flip at midlefty #mid, facing right
     show mcg neu flip at midrighty #least left, facing right
     with fade
+    show ck neu at ck1
+    with moveinright
     "Your heart is still pounding from the sight of the giant beast."
     
+    scene bg clearing2
+    show kun neu flip at midleft #most left, facing right
+    show chan neu flip at midlefty #mid, facing right
+    show mcg neu flip at midrighty #least left, facing right
+    with moveouttop
+
     extend " You can continue travelling towards..."
     scene bg clearing2
     with moveoutleft
@@ -538,7 +570,6 @@ label gooddragons:
             c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
             jump goodcityfront
 
-#gatekeeper
 label goodcityfront:
     scene bg goodcityfront2
     with fade
@@ -549,20 +580,29 @@ label goodcityfront:
     show mcg neu flip at midright #least left, facing right
     with moveinright
     "Nevertheless, you decide to cautiously approach the city."
-    
+    scene bg goodcityfront2
+    show kun neu flip at midleft #most left, facing right
+    show chan neu flip at midlefty #mid, facing right
+    show mcg neu flip at midrighty #least left, facing right
+    with move
     "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
-    
+    show gdk neu at gate
+    with moveinright
     menu:
         "FLEE":
+            scene bg goodcityfront2
+            show gdk neu at gate
+            with moveoutleft
             jump deadend
         "Present the Glowing Rock":
             "The dragon seems pleased, and escorts you into the city."
+            scene bg goodcityfront2
+            with moveoutright
             jump goodcityinterior
         #"Leave behind c1, whose whining was not helpful anyway and FLEE"
         #    "After running away for your life, you and c2 find that you have arrived in front of a crossroads."
         #    jump crossroad
 
-#dragon king
 label goodcityinterior:
     scene bg goodcityinterior2
     with fade
@@ -571,13 +611,15 @@ label goodcityinterior:
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
     scene bg throneroom
     with fade
-    show mcg neu flip at midright #least left, facing right
+    show mcg neu flip at midrighty #least left, facing right
     with moveinleft
-    show chan neu flip at midcenter #mid, facing right
+    show chan neu flip at midlefty #mid, facing right
     with moveinleft
     show kun neu flip at midleft #most left, facing right
     with moveinleft
-    #*** INSERT DRAGON PICTURE FACING LEFT ON THE RIGHT***
+    show gk neu at gking
+    with moveinright
+
     gdr "Hello tiny young ones."
     c2 "Wow! How are you talking to us?"
     gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
@@ -595,11 +637,10 @@ label goodcityinterior:
     gdr "Indeed. Here, let me show you to the city center."
 
     scene bg throneroom
-    with moveoutleft
+    with moveoutright
 
     jump goodcitycenter
 
-#librarian
 label goodcitycenter:
     scene bg goodcityinterior2
     with fade
@@ -618,12 +659,14 @@ label goodcitycenter:
             with moveoutright
             scene bg library2
             with fade
-            show mcg neu flip at midright #least left, facing right
+            show mcg neu flip at midrighty #least left, facing right
             with moveinleft
-            show chan neu flip at midcenter #mid, facing right
+            show chan neu flip at midlefty #mid, facing right
             with moveinleft
             show kun neu flip at midleft #most left, facing right
             with moveinleft
+            show lib neu at glib
+            with moveinright
             #*** INSERT DRAGON PICTURE ***
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
@@ -641,6 +684,7 @@ label goodcitycenter:
             "You set off towards the marked location on the map."
             $ time -= 1 
             scene bg library2
+            show lib neu at glib
             with moveoutleft
             jump templeoftime
         "Nursery":
@@ -670,18 +714,21 @@ label indistortedspace:
     extend " and on..."
     extend " and on..."
     c2 "EEK! I bumped into something."
-    show chan neu
+    show chan neu at midleft
+    with fade
     "\"Who has entered this dreary realm, the graveyard for gods?\""
     c1 "More like we should be asking who YOU are."
-    show kun neu
+    show kun neu at midlefty
+    with fade
     mc "Relax c1. We are here to restore death."
-    show mcg neu
+    show mcg neu at midrighty
+    with fade
     "The figure laughes a slightly maniacal laugh. \"You what?\" Ahahahahaha"
     "\"You all must be mad. Entirely mad.\""
     "\"People search to banish death for ages, and within 20 years, people want to bring death back?\""
     "\"Mad. Entirely mad. The entire lot of you.\""
     death " I came here out of self-sacrifice and you humans are telling me that you want me BACK?"
-    show death neu
+    show death neu at midright
     extend " But you know what? I'll entertain you."
     death "Luckily for you, this place is horribly uncomfortable and I'm getting quite bored."
     death "So how are you going to get us out?"
