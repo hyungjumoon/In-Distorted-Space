@@ -88,50 +88,48 @@ label clearing:
     #Insert DRAGON picture***
     "A dragon SWOOPS in from the sky. The three of you cower in fear."
     "Instead, the dragon grabs hold of the giant centipede, and you have been saved."
-    "Your heart is still pounding from the sight of the giant beast. You can continue travelling towards..."
+    "Your heart is still pounding from the sight of the giant beast."
+    extend " You can continue travelling towards..."
 
-The jungle where the dragon was headed
-//JUMP TO GOOD DRAGONS
-Continue traveling in the direction that you were headed
-After travelling, you find that you have reached a crossroads. 
-//JUMP TO CROSSROADS
-
-
-
-label refugeetown:
-    "You arrive at a modest but dilapidated town. It appears to be inhabited by humans"
-    c2 "Oh look! It's a town of people! It's been a while since we hmet other humans!"
-    c1 "Eh. This area looks lawless to me. We're probably going to get robbed and murdered in our sleep."
-    c2 "Well, at least we'll die in a comfortable bed instead of on the hard ground, I see an inn over there!"
-    mc "Agreed, we need a place to spend the night. The town may look sketchy, but the inn looks safe."
-
-    "Upon arriving in the inn, you are greeted by an attractive innkeeper."
-    pg "Welcome to my inn? You don't look like you're from around here."
-    mc "We would like a place to stay the night, along with some food."
-    pg "I can provide all that but it'll cost you this much."
-    c1 "What! That's outrageous! Why don't you just rob us instead?"
-    "Upon hearing this, the pirate girl pulls out a gun from under the counter and points it at the companion."
-    pg "if you don't like it, leave. However, good luck finding another honest inn like this one. Now pay me or get out."
-    mc "Please calm down. And you, be quiet. We'll gladly pay to stay here."
-    extend "With an innkeeper like you, this must be the safest place in town."
-    pg "Haha, I used to be a pirate back in the day, until \"that event\" happened."
-    pg "Well, actually I was kicked off for helping a stowaway."
-    pg "Past aside, here are your keys, it's been a pleasure doing "
-
-    jump testend
-
-label baddragons:
-    "bad drags"
-    jump testend
+    menu: 
+        "The jungle where the dragon was headed":
+            jump gooddragons
+        "Continue traveling in the direction that you were headed":
+            "After travelling, you find that you have reached a crossroads."
+            jump crossroad
 
 label gooddragons:
-    "good drags"
-    jump otherend
+    #Insert good dragon jungle city
+    "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
+    menu:
+        "Flee from the city":
+            $time = time + 1 
+            "After travelling, you find that you have reached a crossroads."
+            jump crossroad
+        "Approach the city":
+            c1: "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
+            c2: "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
+            jump gooddragoncity
 
-label testend:
-    d "You've reached the end of the game, congratulations"
-    return
+label goodcityfront:
+    "Nevertheless, you decide to cautiously approach the city."
+    "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
+    #*Insert ROAR sound clip*
+    menu:
+        "FLEE":
+            "The dragon eats you and you exist in its stomach acid for all of eternity."
+            jump deadend
+        "Present the Shiny Rock":
+            "The dragon seems pleased, and escorts you into the city."
+            jump goodcityinterior
+        #"Leave behind c1, whose whining was not helpful anyway and FLEE"
+        #    "After running away for your life, you and c2 find that you have arrived in front of a crossroads."
+        #    jump crossroad
+        
+label goodcityinterior:
+    "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."   
+    
 
-label otherend:
-    gol "This is the other end"
+
+label deadend:
     return
