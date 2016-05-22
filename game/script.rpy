@@ -179,11 +179,11 @@ label introduction:
     "-ic dragons of the west, originally kept in check by their food supply, multiplied once they refused to die of starvation."
     "When their food supply also failed to die of starvation...well..."
     "There was a reason all remaining humanity was crammed inside a single walled city."
-    extend "The reason might have been \"massive amounts of airbourne dragon-tanks.\""
+    extend " The reason might have been \"massive amounts of airbourne dragon-tanks.\""
     "Dragons and men had always been at war, having never managed to get past the racism inherent with the ability or lack thereof of breathing fire. But I digress."
     "We were discussing the losers that had nothing better to do with their lives except watch a boring bunch like you walk on the street."
     "They’re here to see the newest dispatch from the Excursion Council: you, Tomo-chan, and Tomo-kun."
-    extend "The fifth such team off on a grand adventure to kick ass and unkill Death."
+    extend " The fifth such team off on a grand adventure to kick ass and unkill Death."
     "It just so happens that you’re all out of ass."
     "You grin at the sullen-looking populace. Their eyes speak of despair, hopelessness - they don’t believe in their salvation, their freedom from the oppression that is deathlessness."
     "They don’t think you can do it."
@@ -816,16 +816,20 @@ label goodend:
     scene bg black
     with fade
     play music "music/Good End Ebb and Flow.mp3"
-    "With Death returning to the world, balance has been restored. The Dragons will mostly die out because they don't have enough sustenance."
+    "With Death returning to the world, balance has been restored. The Dragon population ceases being the main predator, and many will die out because they don't have enough sustenance."
     extend "Meanwhile, in the last stronghold of humanity there will be a decrease in population because the elderly and sick have died."
     "However, as per usual, the resilient race known as humanity will bounce back, and everything eventually returns to the status quo before In Broken Time."
     stop music
     jump credits
 
 label credits:
-    "rofl"
     play music "music/Credits ODDS&ENDS (piano).mp3"
-    "hi"
+    "Credits"
+    extend " Hyugnju (Hector) Moon - \"Plot\" Developer, Writer, Spriter, Hacky Animator"
+    extend " Stella Yang - \"Plot\" Developer, Writer, Spriter, Background Fixer, Music Picker"
+    extend " Bill Tang - Intro writer, Edgemaster, Best known for leaving before finishing his route"
+    extend " Jason Thomas - AFK"
+    extend " Chelsea Li - Less AFK than Jason since she actually chatted with us at midnight xD"
     return
 
 label deocide:

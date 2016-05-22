@@ -1,3 +1,4 @@
+.DS_Store matches **/.** (None).
 .git/ matches **/.** (None).
 bsproj/ matches ** ([u'all']).
 bsproj/hero and returners.bsproj matches ** ([u'all']).
@@ -13,6 +14,8 @@ bsproj/in broken time/DeadSprites/DeadFather.png matches ** ([u'all']).
 bsproj/in broken time/DeadSprites/DeadMother.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/ matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_image10.png matches ** ([u'all']).
+bsproj/in broken time/LeftFace/BannedStory_image_Hero_L.png matches ** ([u'all']).
+bsproj/in broken time/LeftFace/BannedStory_image_LeXTRA.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL1.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL10.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL11.png matches ** ([u'all']).
@@ -29,8 +32,6 @@ bsproj/in broken time/LeftFace/BannedStory_imageL6.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL7.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL8.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace/BannedStory_imageL9.png matches ** ([u'all']).
-bsproj/in broken time/LeftFace/BannedStory_image_Hero_L.png matches ** ([u'all']).
-bsproj/in broken time/LeftFace/BannedStory_image_LeXTRA.png matches ** ([u'all']).
 bsproj/in broken time/LeftFace.rar matches ** ([u'all']).
 bsproj/in broken time/main char.bsproj matches ** ([u'all']).
 bsproj/in broken time/RightFace/ matches ** ([u'all']).
@@ -58,6 +59,7 @@ bsproj/Tomodachi.bsproj matches ** ([u'all']).
 bsproj/two random chars.bsproj matches ** ([u'all']).
 errors.txt matches errors.txt (None).
 game/ matches ** ([u'all']).
+game/.DS_Store matches **/.** (None).
 game/cache/ matches ** ([u'all']).
 game/cache/bytecode.rpyb matches ** ([u'all']).
 game/cache/pyanalysis.rpyb matches ** ([u'all']).
@@ -130,10 +132,13 @@ game/screens.rpy.bak matches **.bak (None).
 game/screens.rpyc matches ** ([u'all']).
 game/script.rpy matches ** ([u'all']).
 game/script.rpyc matches ** ([u'all']).
+icon.icns matches icon.icns (None).
+icon.ico matches icon.ico (None).
 log.txt matches log.txt (None).
 README.html matches ** ([u'all']).
 tmp/ matches tmp/ (None).
 traceback.txt matches traceback.txt (None).
+.DS_Store matches **/.* (None).
 doc/ doesn't match anything.
 doc/ matches None (None).
 launcher/ doesn't match anything.
@@ -145,6 +150,26 @@ lib/darwin-x86_64/eggs/pyasn1-0.1.7-py2.7.egg matches lib/darwin-x86_64/** ([u'm
 lib/darwin-x86_64/eggs/rsa-3.1.4-py2.7.egg matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/ matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/ matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_bisect.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_collections.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_ctypes.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_File.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_functools.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_heapq.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_io.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_json.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_locale.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_md5.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_random.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_renpy.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_renpybidi.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_Res.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_scproxy.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_sha.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_sha256.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_sha512.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_socket.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/_struct.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/array.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/binascii.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/bz2.so matches lib/darwin-x86_64/** ([u'mac']).
@@ -163,6 +188,7 @@ lib/darwin-x86_64/lib/python2.7/operator.so matches lib/darwin-x86_64/** ([u'mac
 lib/darwin-x86_64/lib/python2.7/os.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pyexpat.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/ matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/color.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/compat.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/controller.so matches lib/darwin-x86_64/** ([u'mac']).
@@ -187,8 +213,8 @@ lib/darwin-x86_64/lib/python2.7/pygame_sdl2/sysfont.pyo matches lib/darwin-x86_6
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/time.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/transform.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/pygame_sdl2/version.pyo matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/ matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/renpy/__init__.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/audio/ matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/audio/renpysound.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/display/ matches lib/darwin-x86_64/** ([u'mac']).
@@ -206,8 +232,6 @@ lib/darwin-x86_64/lib/python2.7/renpy/gl/glrtt_fbo.so matches lib/darwin-x86_64/
 lib/darwin-x86_64/lib/python2.7/renpy/gl/gltexture.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/style.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/ matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/renpy/styledata/styleclass.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/renpy/styledata/stylesets.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_activate_functions.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_functions.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_hover_functions.so matches lib/darwin-x86_64/** ([u'mac']).
@@ -218,36 +242,17 @@ lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_selected_functions.so matc
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_selected_hover_functions.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_selected_idle_functions.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/styledata/style_selected_insensitive_functions.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/renpy/styledata/styleclass.so matches lib/darwin-x86_64/** ([u'mac']).
+lib/darwin-x86_64/lib/python2.7/renpy/styledata/stylesets.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/text/ matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/text/ftfont.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/text/textsupport.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/renpy/text/texwrap.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/renpy/__init__.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/select.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/site.pyo matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/strop.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/time.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/lib/python2.7/zlib.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_bisect.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_collections.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_ctypes.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_File.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_functools.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_heapq.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_io.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_json.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_locale.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_md5.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_random.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_renpy.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_renpybidi.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_Res.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_scproxy.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_sha.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_sha256.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_sha512.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_socket.so matches lib/darwin-x86_64/** ([u'mac']).
-lib/darwin-x86_64/lib/python2.7/_struct.so matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/libavcodec.57.dylib matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/libavformat.57.dylib matches lib/darwin-x86_64/** ([u'mac']).
 lib/darwin-x86_64/libavresample.3.dylib matches lib/darwin-x86_64/** ([u'mac']).
@@ -274,6 +279,23 @@ lib/linux-i686/eggs/pyasn1-0.1.7-py2.7.egg matches lib/linux-i686/** ([u'linux']
 lib/linux-i686/eggs/rsa-3.1.4-py2.7.egg matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/ matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/ matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_bisect.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_collections.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_ctypes.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_functools.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_heapq.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_io.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_json.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_locale.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_md5.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_random.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_renpy.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_renpybidi.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_sha.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_sha256.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_sha512.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_socket.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/_struct.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/array.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/binascii.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/bz2.so matches lib/linux-i686/** ([u'linux']).
@@ -290,6 +312,7 @@ lib/linux-i686/lib/python2.7/operator.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/os.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pyexpat.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/ matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/color.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/compat.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/controller.so matches lib/linux-i686/** ([u'linux']).
@@ -314,8 +337,8 @@ lib/linux-i686/lib/python2.7/pygame_sdl2/sysfont.pyo matches lib/linux-i686/** (
 lib/linux-i686/lib/python2.7/pygame_sdl2/time.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/transform.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/pygame_sdl2/version.pyo matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/ matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/renpy/__init__.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/audio/ matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/audio/renpysound.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/display/ matches lib/linux-i686/** ([u'linux']).
@@ -333,8 +356,6 @@ lib/linux-i686/lib/python2.7/renpy/gl/glrtt_fbo.so matches lib/linux-i686/** ([u
 lib/linux-i686/lib/python2.7/renpy/gl/gltexture.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/style.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/ matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/renpy/styledata/styleclass.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/renpy/styledata/stylesets.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/style_activate_functions.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/style_functions.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/style_hover_functions.so matches lib/linux-i686/** ([u'linux']).
@@ -345,33 +366,17 @@ lib/linux-i686/lib/python2.7/renpy/styledata/style_selected_functions.so matches
 lib/linux-i686/lib/python2.7/renpy/styledata/style_selected_hover_functions.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/style_selected_idle_functions.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/styledata/style_selected_insensitive_functions.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/renpy/styledata/styleclass.so matches lib/linux-i686/** ([u'linux']).
+lib/linux-i686/lib/python2.7/renpy/styledata/stylesets.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/text/ matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/text/ftfont.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/text/textsupport.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/renpy/text/texwrap.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/renpy/__init__.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/select.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/site.pyo matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/strop.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/time.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/lib/python2.7/zlib.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_bisect.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_collections.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_ctypes.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_functools.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_heapq.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_io.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_json.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_locale.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_md5.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_random.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_renpy.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_renpybidi.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_sha.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_sha256.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_sha512.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_socket.so matches lib/linux-i686/** ([u'linux']).
-lib/linux-i686/lib/python2.7/_struct.so matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/libavcodec.so.57 matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/libavformat.so.57 matches lib/linux-i686/** ([u'linux']).
 lib/linux-i686/libavresample.so.3 matches lib/linux-i686/** ([u'linux']).
@@ -398,6 +403,23 @@ lib/linux-x86_64/eggs/pyasn1-0.1.7-py2.7.egg matches lib/linux-x86_64/** ([u'lin
 lib/linux-x86_64/eggs/rsa-3.1.4-py2.7.egg matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/ matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/ matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_bisect.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_collections.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_ctypes.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_functools.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_heapq.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_io.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_json.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_locale.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_md5.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_random.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_renpy.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_renpybidi.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_sha.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_sha256.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_sha512.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_socket.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/_struct.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/array.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/binascii.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/bz2.so matches lib/linux-x86_64/** ([u'linux']).
@@ -414,6 +436,7 @@ lib/linux-x86_64/lib/python2.7/operator.so matches lib/linux-x86_64/** ([u'linux
 lib/linux-x86_64/lib/python2.7/os.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pyexpat.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/ matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/color.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/compat.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/controller.so matches lib/linux-x86_64/** ([u'linux']).
@@ -438,8 +461,8 @@ lib/linux-x86_64/lib/python2.7/pygame_sdl2/sysfont.pyo matches lib/linux-x86_64/
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/time.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/transform.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/pygame_sdl2/version.pyo matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/pygame_sdl2/__init__.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/ matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/renpy/__init__.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/audio/ matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/audio/renpysound.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/display/ matches lib/linux-x86_64/** ([u'linux']).
@@ -457,8 +480,6 @@ lib/linux-x86_64/lib/python2.7/renpy/gl/glrtt_fbo.so matches lib/linux-x86_64/**
 lib/linux-x86_64/lib/python2.7/renpy/gl/gltexture.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/style.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/ matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/renpy/styledata/styleclass.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/renpy/styledata/stylesets.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_activate_functions.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_functions.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_hover_functions.so matches lib/linux-x86_64/** ([u'linux']).
@@ -469,33 +490,17 @@ lib/linux-x86_64/lib/python2.7/renpy/styledata/style_selected_functions.so match
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_selected_hover_functions.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_selected_idle_functions.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/styledata/style_selected_insensitive_functions.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/renpy/styledata/styleclass.so matches lib/linux-x86_64/** ([u'linux']).
+lib/linux-x86_64/lib/python2.7/renpy/styledata/stylesets.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/text/ matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/text/ftfont.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/text/textsupport.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/renpy/text/texwrap.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/renpy/__init__.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/select.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/site.pyo matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/strop.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/time.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/lib/python2.7/zlib.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_bisect.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_collections.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_ctypes.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_functools.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_heapq.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_io.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_json.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_locale.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_md5.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_random.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_renpy.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_renpybidi.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_sha.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_sha256.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_sha512.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_socket.so matches lib/linux-x86_64/** ([u'linux']).
-lib/linux-x86_64/lib/python2.7/_struct.so matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/libavcodec.so.57 matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/libavformat.so.57 matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/libavresample.so.3 matches lib/linux-x86_64/** ([u'linux']).
@@ -517,6 +522,13 @@ lib/linux-x86_64/renpy matches lib/*/renpy (None).
 lib/linux-x86_64/zsync matches lib/linux-x86_64/** ([u'linux']).
 lib/linux-x86_64/zsyncmake matches lib/linux-x86_64/** ([u'linux']).
 lib/pythonlib2.7/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/__future__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_abcoll.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_LWPCookieJar.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_MozillaCookieJar.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_strptime.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_threading_local.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/_weakrefset.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/abc.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/argparse.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/ast.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -525,10 +537,10 @@ lib/pythonlib2.7/base64.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/bisect.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/calendar.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/Carbon/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/Carbon/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/Carbon/File.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/Carbon/Files.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/Carbon/Res.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/Carbon/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/codecs.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/collections.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/colorsys.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -538,15 +550,17 @@ lib/pythonlib2.7/cookielib.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/copy.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/copy_reg.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/ctypes/ matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/ctypes/wintypes.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/ctypes/_endian.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/ctypes/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/ctypes/_endian.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/ctypes/wintypes.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/decimal.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/difflib.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/dis.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/dummy_thread.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/dummy_threading.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/email/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/email/_parseaddr.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/base64mime.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/charset.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/encoders.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -557,6 +571,7 @@ lib/pythonlib2.7/email/header.pyo matches /lib/** ([u'windows', u'linux', u'mac'
 lib/pythonlib2.7/email/iterators.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/message.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/email/mime/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/audio.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/base.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/image.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -564,13 +579,11 @@ lib/pythonlib2.7/email/mime/message.pyo matches /lib/** ([u'windows', u'linux', 
 lib/pythonlib2.7/email/mime/multipart.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/nonmultipart.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/mime/text.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/email/mime/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/parser.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/quoprimime.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/email/utils.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/email/_parseaddr.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/email/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/encodings/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/aliases.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/ascii.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/base64_codec.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -586,7 +599,6 @@ lib/pythonlib2.7/encodings/utf_16_le.pyo matches /lib/** ([u'windows', u'linux',
 lib/pythonlib2.7/encodings/utf_32_be.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/utf_8.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/encodings/zlib_codec.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/encodings/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/fnmatch.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/ftplib.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/functools.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -604,10 +616,10 @@ lib/pythonlib2.7/importlib/__init__.pyo matches /lib/** ([u'windows', u'linux', 
 lib/pythonlib2.7/inspect.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/io.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/json/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/json/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/json/decoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/json/encoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/json/scanner.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/json/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/keyword.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/linecache.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/locale.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -625,28 +637,31 @@ lib/pythonlib2.7/pickle.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/platform.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/plistlib.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/posixpath.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/py_compile.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/codec/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/ber/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/codec/ber/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/ber/decoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/ber/encoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/ber/eoo.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/codec/ber/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/cer/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/codec/cer/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/cer/decoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/cer/encoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/codec/cer/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/der/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/codec/der/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/der/decoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/codec/der/encoder.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/codec/der/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/codec/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/compat/ matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/compat/octets.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/compat/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/compat/octets.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/debug.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/error.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/pyasn1/type/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/base.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/char.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/constraint.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -657,15 +672,14 @@ lib/pythonlib2.7/pyasn1/type/tag.pyo matches /lib/** ([u'windows', u'linux', u'm
 lib/pythonlib2.7/pyasn1/type/tagmap.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/univ.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/pyasn1/type/useful.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/type/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/pyasn1/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/py_compile.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/quopri.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/random.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/re.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/repr.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rfc822.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/rsa/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/rsa/_compat.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/asn1.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/common.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/core.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -677,8 +691,6 @@ lib/pythonlib2.7/rsa/prime.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/randnum.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/transform.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/rsa/varblock.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/rsa/_compat.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/rsa/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/sets.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/shlex.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/shutil.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -709,22 +721,15 @@ lib/pythonlib2.7/weakref.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/webbrowser.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/win32con.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/xml/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/etree/ matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/xml/etree/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/etree/ElementPath.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/etree/ElementTree.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/xml/etree/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/parsers/ matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/xml/parsers/expat.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/xml/parsers/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/xml/__init__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
+lib/pythonlib2.7/xml/parsers/expat.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/pythonlib2.7/zipfile.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_abcoll.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_LWPCookieJar.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_MozillaCookieJar.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_strptime.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_threading_local.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/_weakrefset.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
-lib/pythonlib2.7/__future__.pyo matches /lib/** ([u'windows', u'linux', u'mac']).
 lib/windows-i686/ matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/avcodec-57.dll matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/avformat-57.dll matches lib/windows-i686/** ([u'windows']).
@@ -732,12 +737,18 @@ lib/windows-i686/avutil-55.dll matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/dxwebsetup.exe matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/glew32.dll matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/ matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/_ctypes.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/_hashlib.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/_renpy.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/_renpybidi.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/_socket.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/bz2.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/lib-dynload/ matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/lib-dynload/dynload.txt matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/os.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pyexpat.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/ matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/pygame_sdl2/__init__.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/color.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/compat.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/controller.pyd matches lib/windows-i686/** ([u'windows']).
@@ -762,8 +773,8 @@ lib/windows-i686/Lib/pygame_sdl2/sysfont.pyo matches lib/windows-i686/** ([u'win
 lib/windows-i686/Lib/pygame_sdl2/time.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/transform.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/pygame_sdl2/version.pyo matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/pygame_sdl2/__init__.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/ matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/renpy/__init__.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/angle/ matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/angle/gl.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/angle/gldraw.pyd matches lib/windows-i686/** ([u'windows']).
@@ -788,8 +799,6 @@ lib/windows-i686/Lib/renpy/gl/glrtt_fbo.pyd matches lib/windows-i686/** ([u'wind
 lib/windows-i686/Lib/renpy/gl/gltexture.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/style.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/ matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/renpy/styledata/styleclass.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/renpy/styledata/stylesets.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/style_activate_functions.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/style_functions.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/style_hover_functions.pyd matches lib/windows-i686/** ([u'windows']).
@@ -800,18 +809,14 @@ lib/windows-i686/Lib/renpy/styledata/style_selected_functions.pyd matches lib/wi
 lib/windows-i686/Lib/renpy/styledata/style_selected_hover_functions.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/style_selected_idle_functions.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/styledata/style_selected_insensitive_functions.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/renpy/styledata/styleclass.pyd matches lib/windows-i686/** ([u'windows']).
+lib/windows-i686/Lib/renpy/styledata/stylesets.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/text/ matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/text/ftfont.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/text/textsupport.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/renpy/text/texwrap.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/renpy/__init__.pyo matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/select.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/Lib/site.pyo matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/_ctypes.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/_hashlib.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/_renpy.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/_renpybidi.pyd matches lib/windows-i686/** ([u'windows']).
-lib/windows-i686/Lib/_socket.pyd matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/libEGL.dll matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/libfreetype-6.dll matches lib/windows-i686/** ([u'windows']).
 lib/windows-i686/libgcc_s_sjlj-1.dll matches lib/windows-i686/** ([u'windows']).
@@ -836,12 +841,18 @@ LICENSE.txt doesn't match anything.
 LICENSE.txt matches None (None).
 log.txt doesn't match anything.
 log.txt matches None (None).
+maplestory_mir_by_skyfireroy-d4bf5ho.png doesn't match anything.
+maplestory_mir_by_skyfireroy-d4bf5ho.png matches None (None).
 module/ doesn't match anything.
 module/ matches None (None).
 renpy/ matches renpy/ ([u'all']).
+renpy/__init__.py matches renpy/** ([u'renpy']).
+renpy/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/add_from.py matches renpy/** ([u'renpy']).
 renpy/add_from.pyo matches renpy/** ([u'renpy']).
 renpy/angle/ matches renpy/** ([u'renpy']).
+renpy/angle/__init__.py matches renpy/** ([u'renpy']).
+renpy/angle/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/angle/gl.pxd matches renpy/** ([u'renpy']).
 renpy/angle/gl.pyx matches renpy/** ([u'renpy']).
 renpy/angle/glblacklist.py matches renpy/** ([u'renpy']).
@@ -853,8 +864,6 @@ renpy/angle/glrtt_copy.pyx matches renpy/** ([u'renpy']).
 renpy/angle/glrtt_fbo.pyx matches renpy/** ([u'renpy']).
 renpy/angle/gltexture.pxd matches renpy/** ([u'renpy']).
 renpy/angle/gltexture.pyx matches renpy/** ([u'renpy']).
-renpy/angle/__init__.py matches renpy/** ([u'renpy']).
-renpy/angle/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/arguments.py matches renpy/** ([u'renpy']).
 renpy/arguments.pyo matches renpy/** ([u'renpy']).
 renpy/ast.py matches renpy/** ([u'renpy']).
@@ -862,6 +871,8 @@ renpy/ast.pyo matches renpy/** ([u'renpy']).
 renpy/atl.py matches renpy/** ([u'renpy']).
 renpy/atl.pyo matches renpy/** ([u'renpy']).
 renpy/audio/ matches renpy/** ([u'renpy']).
+renpy/audio/__init__.py matches renpy/** ([u'renpy']).
+renpy/audio/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/audio/androidhw.py matches renpy/** ([u'renpy']).
 renpy/audio/androidhw.pyo matches renpy/** ([u'renpy']).
 renpy/audio/audio.py matches renpy/** ([u'renpy']).
@@ -873,8 +884,6 @@ renpy/audio/music.pyo matches renpy/** ([u'renpy']).
 renpy/audio/renpysound.pyx matches renpy/** ([u'renpy']).
 renpy/audio/sound.py matches renpy/** ([u'renpy']).
 renpy/audio/sound.pyo matches renpy/** ([u'renpy']).
-renpy/audio/__init__.py matches renpy/** ([u'renpy']).
-renpy/audio/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/bootstrap.py matches renpy/** ([u'renpy']).
 renpy/bootstrap.pyo matches renpy/** ([u'renpy']).
 renpy/character.py matches renpy/** ([u'renpy']).
@@ -968,12 +977,6 @@ renpy/common/00updater.rpy matches renpy/common/**.rpy ([u'renpy']).
 renpy/common/00updater.rpyc matches renpy/common/** ([u'all']).
 renpy/common/00voice.rpy matches renpy/common/**.rpy ([u'renpy']).
 renpy/common/00voice.rpyc matches renpy/common/** ([u'all']).
-renpy/common/blindstile.png matches renpy/common/** ([u'all']).
-renpy/common/DejaVuSans-Bold.ttf matches renpy/common/** ([u'all']).
-renpy/common/DejaVuSans.ttf matches renpy/common/** ([u'all']).
-renpy/common/DejaVuSans.txt matches renpy/common/** ([u'all']).
-renpy/common/gamecontrollerdb.txt matches renpy/common/** ([u'all']).
-renpy/common/squarestile.png matches renpy/common/** ([u'all']).
 renpy/common/_compat/ matches renpy/common/_compat/** ([u'renpy']).
 renpy/common/_compat/gamemenu.rpym matches renpy/common/_compat/** ([u'renpy']).
 renpy/common/_compat/gamemenu.rpymc matches renpy/common/_compat/** ([u'renpy']).
@@ -1070,6 +1073,7 @@ renpy/common/_theme_amie2/frame.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_amie2/hover_bar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_amie2/hover_frame.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_austen/au_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/auscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/auscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/auslider_empty.png matches renpy/common/** ([u'all']).
@@ -1080,7 +1084,6 @@ renpy/common/_theme_austen/auvscrollbar_thumb.png matches renpy/common/** ([u'al
 renpy/common/_theme_austen/auvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/auvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_austen/auvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_austen/au_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/ matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/bar_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/bar_full_overlay.png matches renpy/common/** ([u'all']).
@@ -1110,6 +1113,10 @@ renpy/common/_theme_awt/slider_empty_all.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/slider_empty_overlay.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/slider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/slider_full_overlay.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_awt/v_bar_full.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_awt/v_bar_full_overlay.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_awt/v_bar_thumb.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_awt/v_bar_thumb_overlay.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vscroller.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vscroller_overlay.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vslider_empty_all.png matches renpy/common/** ([u'all']).
@@ -1117,11 +1124,8 @@ renpy/common/_theme_awt/vslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vslider_full_overlay.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vthumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_awt/vthumb_overlay.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_awt/v_bar_full.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_awt/v_bar_full_overlay.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_awt/v_bar_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_awt/v_bar_thumb_overlay.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_bordered/br_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/brscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/brscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/brslider_empty.png matches renpy/common/** ([u'all']).
@@ -1132,8 +1136,9 @@ renpy/common/_theme_bordered/brvscrollbar_thumb.png matches renpy/common/** ([u'
 renpy/common/_theme_bordered/brvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/brvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_bordered/brvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_bordered/br_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_crayon/cry_box.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_crayon/cry_box2.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/cryscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/cryscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/cryslider_empty.png matches renpy/common/** ([u'all']).
@@ -1144,10 +1149,9 @@ renpy/common/_theme_crayon/cryvscrollbar_thumb.png matches renpy/common/** ([u'a
 renpy/common/_theme_crayon/cryvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/cryvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/cryvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_crayon/cry_box.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_crayon/cry_box2.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_crayon/rr12g.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_diamond/d_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/dscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/dscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/dslider_empty.png matches renpy/common/** ([u'all']).
@@ -1158,8 +1162,9 @@ renpy/common/_theme_diamond/dvscrollbar_thumb.png matches renpy/common/** ([u'al
 renpy/common/_theme_diamond/dvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/dvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_diamond/dvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_diamond/d_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_glow/g_box.png matches renpy/common/** ([u'all']).
+renpy/common/_theme_glow/g_outline.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/gscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/gscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/gslider_empty.png matches renpy/common/** ([u'all']).
@@ -1170,9 +1175,8 @@ renpy/common/_theme_glow/gvscrollbar_thumb.png matches renpy/common/** ([u'all']
 renpy/common/_theme_glow/gvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/gvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_glow/gvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_glow/g_box.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_glow/g_outline.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_marker/ink_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/inkscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/inkscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/inkslider_empty.png matches renpy/common/** ([u'all']).
@@ -1183,8 +1187,8 @@ renpy/common/_theme_marker/inkvscrollbar_thumb.png matches renpy/common/** ([u'a
 renpy/common/_theme_marker/inkvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/inkvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_marker/inkvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_marker/ink_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_regal/re_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/rescrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/rescrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/reslider_empty.png matches renpy/common/** ([u'all']).
@@ -1195,8 +1199,8 @@ renpy/common/_theme_regal/revscrollbar_thumb.png matches renpy/common/** ([u'all
 renpy/common/_theme_regal/revslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/revslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_regal/revslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_regal/re_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_threeD/th_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/thscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/thscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/thslider_empty.png matches renpy/common/** ([u'all']).
@@ -1207,8 +1211,8 @@ renpy/common/_theme_threeD/thvscrollbar_thumb.png matches renpy/common/** ([u'al
 renpy/common/_theme_threeD/thvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/thvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_threeD/thvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_threeD/th_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/ matches renpy/common/** ([u'all']).
+renpy/common/_theme_tv/t_box.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tscrollbar.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tslider_empty.png matches renpy/common/** ([u'all']).
@@ -1219,9 +1223,14 @@ renpy/common/_theme_tv/tvscrollbar_thumb.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tvslider_empty.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tvslider_full.png matches renpy/common/** ([u'all']).
 renpy/common/_theme_tv/tvslider_thumb.png matches renpy/common/** ([u'all']).
-renpy/common/_theme_tv/t_box.png matches renpy/common/** ([u'all']).
 renpy/common/_transparent_tile.png matches renpy/common/** ([u'all']).
 renpy/common/_tv_unsafe.png matches renpy/common/** ([u'all']).
+renpy/common/blindstile.png matches renpy/common/** ([u'all']).
+renpy/common/DejaVuSans-Bold.ttf matches renpy/common/** ([u'all']).
+renpy/common/DejaVuSans.ttf matches renpy/common/** ([u'all']).
+renpy/common/DejaVuSans.txt matches renpy/common/** ([u'all']).
+renpy/common/gamecontrollerdb.txt matches renpy/common/** ([u'all']).
+renpy/common/squarestile.png matches renpy/common/** ([u'all']).
 renpy/config.py matches renpy/** ([u'renpy']).
 renpy/config.pyo matches renpy/** ([u'renpy']).
 renpy/curry.py matches renpy/** ([u'renpy']).
@@ -1229,6 +1238,8 @@ renpy/curry.pyo matches renpy/** ([u'renpy']).
 renpy/defaultstore.py matches renpy/** ([u'renpy']).
 renpy/defaultstore.pyo matches renpy/** ([u'renpy']).
 renpy/display/ matches renpy/** ([u'renpy']).
+renpy/display/__init__.py matches renpy/** ([u'renpy']).
+renpy/display/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/display/accelerator.pyx matches renpy/** ([u'renpy']).
 renpy/display/anim.py matches renpy/** ([u'renpy']).
 renpy/display/anim.pyo matches renpy/** ([u'renpy']).
@@ -1292,8 +1303,6 @@ renpy/display/video.py matches renpy/** ([u'renpy']).
 renpy/display/video.pyo matches renpy/** ([u'renpy']).
 renpy/display/viewport.py matches renpy/** ([u'renpy']).
 renpy/display/viewport.pyo matches renpy/** ([u'renpy']).
-renpy/display/__init__.py matches renpy/** ([u'renpy']).
-renpy/display/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/dump.py matches renpy/** ([u'renpy']).
 renpy/dump.pyo matches renpy/** ([u'renpy']).
 renpy/easy.py matches renpy/** ([u'renpy']).
@@ -1309,6 +1318,8 @@ renpy/exports.pyo matches renpy/** ([u'renpy']).
 renpy/game.py matches renpy/** ([u'renpy']).
 renpy/game.pyo matches renpy/** ([u'renpy']).
 renpy/gl/ matches renpy/** ([u'renpy']).
+renpy/gl/__init__.py matches renpy/** ([u'renpy']).
+renpy/gl/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/gl/gl.pxd matches renpy/** ([u'renpy']).
 renpy/gl/gl.pyx matches renpy/** ([u'renpy']).
 renpy/gl/gl1.pxd matches renpy/** ([u'renpy']).
@@ -1324,8 +1335,6 @@ renpy/gl/glrtt_copy.pyx matches renpy/** ([u'renpy']).
 renpy/gl/glrtt_fbo.pyx matches renpy/** ([u'renpy']).
 renpy/gl/gltexture.pxd matches renpy/** ([u'renpy']).
 renpy/gl/gltexture.pyx matches renpy/** ([u'renpy']).
-renpy/gl/__init__.py matches renpy/** ([u'renpy']).
-renpy/gl/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/lint.py matches renpy/** ([u'renpy']).
 renpy/lint.pyo matches renpy/** ([u'renpy']).
 renpy/loader.py matches renpy/** ([u'renpy']).
@@ -1361,6 +1370,8 @@ renpy/script.pyo matches renpy/** ([u'renpy']).
 renpy/scriptedit.py matches renpy/** ([u'renpy']).
 renpy/scriptedit.pyo matches renpy/** ([u'renpy']).
 renpy/sl2/ matches renpy/** ([u'renpy']).
+renpy/sl2/__init__.py matches renpy/** ([u'renpy']).
+renpy/sl2/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/sl2/slast.py matches renpy/** ([u'renpy']).
 renpy/sl2/slast.pyo matches renpy/** ([u'renpy']).
 renpy/sl2/sldisplayables.py matches renpy/** ([u'renpy']).
@@ -1369,22 +1380,22 @@ renpy/sl2/slparser.py matches renpy/** ([u'renpy']).
 renpy/sl2/slparser.pyo matches renpy/** ([u'renpy']).
 renpy/sl2/slproperties.py matches renpy/** ([u'renpy']).
 renpy/sl2/slproperties.pyo matches renpy/** ([u'renpy']).
-renpy/sl2/__init__.py matches renpy/** ([u'renpy']).
-renpy/sl2/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/statements.py matches renpy/** ([u'renpy']).
 renpy/statements.pyo matches renpy/** ([u'renpy']).
 renpy/style.pxd matches renpy/** ([u'renpy']).
 renpy/style.pyx matches renpy/** ([u'renpy']).
 renpy/styledata/ matches renpy/** ([u'renpy']).
+renpy/styledata/__init__.py matches renpy/** ([u'renpy']).
+renpy/styledata/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/styledata/styleclass.pyx matches renpy/** ([u'renpy']).
 renpy/styledata/stylesets.pyx matches renpy/** ([u'renpy']).
 renpy/styledata/styleutil.py matches renpy/** ([u'renpy']).
 renpy/styledata/styleutil.pyo matches renpy/** ([u'renpy']).
-renpy/styledata/__init__.py matches renpy/** ([u'renpy']).
-renpy/styledata/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/substitutions.py matches renpy/** ([u'renpy']).
 renpy/substitutions.pyo matches renpy/** ([u'renpy']).
 renpy/test/ matches renpy/** ([u'renpy']).
+renpy/test/__init__.py matches renpy/** ([u'renpy']).
+renpy/test/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/test/testast.py matches renpy/** ([u'renpy']).
 renpy/test/testast.pyo matches renpy/** ([u'renpy']).
 renpy/test/testexecution.py matches renpy/** ([u'renpy']).
@@ -1397,9 +1408,9 @@ renpy/test/testmouse.py matches renpy/** ([u'renpy']).
 renpy/test/testmouse.pyo matches renpy/** ([u'renpy']).
 renpy/test/testparser.py matches renpy/** ([u'renpy']).
 renpy/test/testparser.pyo matches renpy/** ([u'renpy']).
-renpy/test/__init__.py matches renpy/** ([u'renpy']).
-renpy/test/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/text/ matches renpy/** ([u'renpy']).
+renpy/text/__init__.py matches renpy/** ([u'renpy']).
+renpy/text/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/text/extras.py matches renpy/** ([u'renpy']).
 renpy/text/extras.pyo matches renpy/** ([u'renpy']).
 renpy/text/font.py matches renpy/** ([u'renpy']).
@@ -1411,8 +1422,6 @@ renpy/text/text.pyo matches renpy/** ([u'renpy']).
 renpy/text/textsupport.pxd matches renpy/** ([u'renpy']).
 renpy/text/textsupport.pyx matches renpy/** ([u'renpy']).
 renpy/text/texwrap.pyx matches renpy/** ([u'renpy']).
-renpy/text/__init__.py matches renpy/** ([u'renpy']).
-renpy/text/__init__.pyo matches renpy/** ([u'renpy']).
 renpy/translation.py matches renpy/** ([u'renpy']).
 renpy/translation.pyo matches renpy/** ([u'renpy']).
 renpy/ui.py matches renpy/** ([u'renpy']).
@@ -1421,8 +1430,6 @@ renpy/vc_version.py matches renpy/** ([u'renpy']).
 renpy/vc_version.pyo matches renpy/** ([u'renpy']).
 renpy/warp.py matches renpy/** ([u'renpy']).
 renpy/warp.pyo matches renpy/** ([u'renpy']).
-renpy/__init__.py matches renpy/** ([u'renpy']).
-renpy/__init__.pyo matches renpy/** ([u'renpy']).
 renpy.app/ doesn't match anything.
 renpy.app/ matches None (None).
 renpy.exe doesn't match anything.
