@@ -80,8 +80,8 @@ label gooddragons:
             "After travelling, you find that you have reached a crossroads."
             jump crossroad
         "Approach the city":
-            c1: "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
-            c2: "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
+            c1 "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
+            c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
             jump gooddragoncity
 
 label goodcityfront:
