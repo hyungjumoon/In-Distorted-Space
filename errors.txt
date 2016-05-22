@@ -2,16 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/stella script.rpy", line 160: expected statement.
-    <<<<<<< HEAD:game/stella script.rpy
-                ^
-
-File "game/stella script.rpy", line 166: expected statement.
-    =======
-          ^
-
-File "game/stella script.rpy", line 168: expected statement.
-    >>>>>>> origin/master:game/stella script.rpy
-                         ^
+File "game/script.rpy", line 396: expected statement.
+    time = time - 1 
+         ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227

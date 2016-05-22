@@ -3,17 +3,17 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 image bg test = ".jpg"
-image bg default = "black.jpg"
+image bg black = "black.png"
 image bg forest = "forest.jpg"
 image bg treetop = "treetop.jpg"
 image bg abandonedvillage2 = "abandoned village.jpg"
 image bg clearing2 = "clearing.jpg"
-image bg crossroad2 = "crossroad.jpg"
+image bg crossroad2 = "crossroads.jpg"
 image bg goodcityfront2 = "good dragon city gate.jpg"
-image bg goodcityfar2 = "good dragon city distant.jpg"
+image bg goodcityfar2 = "gdcd.jpeg"
 image bg goodcityinterior2 = "good dragon city interior.jpg"
 image bg throneroom = "throneroom.jpg"
-image bg library2 = "library.jpg"
+image bg library2 = "library.png"
 image bg indistortedspace2 = "distorted space.jpg"
 image bg inn2 = "shop2.png"
 image bg refugeetown2 = "rivertown3.jpg"
@@ -26,7 +26,6 @@ image mc defauklt = ".jpg"
 
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
-define d = Character("Death")
 define gol = Character("Goddess of Life")
 define dk = Character("Dragon King")
 define c1 = Character("Tomo-kun")
@@ -36,18 +35,19 @@ define pg = Character("Innkeeper")
 define mg = Character("Mysterious Girl")
 define gdr = Character("Good Dragon Ruler")
 define gdl = Character("Dragon Librarian")
-define death = Character("God of Death")
+define death = Character("Death")
 
-#various variable names, to be tested
-$male = False
-$lovepoints = 1
-$food = 0
-$hp = 100
-$time = 0
-$goodDragTown=False
 
 # The game starts here.
 label start:
+#various variable names, to be tested
+    $ male = False
+    $ lovepoints = 1
+    $ food = 0
+    $ hp = 100
+    $ time = 0
+    $ goodDragTown=False
+
     scene bg black
     with fade
     "Nobody really noticed when Death died."
@@ -116,7 +116,7 @@ label crossroad:
     menu:      #add dialogue while travelling
         "The Jungle":
             "You decide to follow the leafy road."
-            $time = time + 1
+            $ time += 1
             jump gooddragons
         #"The Cliffs":
         #    "You decide to follow the rocky road."
@@ -183,7 +183,7 @@ label gooddragons2:
     jump otherend
 
 label templeoftime:
-    scene bg templeoftime2
+    scene bg crater
     with fade
     "After a long and arduous travel, the party arrives at the location marked on the map."
     "Once there, the party is struck silent by the sight of an aging massive crater."
@@ -214,7 +214,9 @@ label templeoftime:
     mg "I have certain...connections with an individual. I can take you to the place Death vanquished himself."
     mc "What?! Who are you?! \"Vanquished himself\"?!"
     mg "Find the truth yourself..."
-
+    
+    scene bg templeoftime2
+    with fade
     "After a blur and dizzying sway, you and your companions find yourself on the floor of the Temple of Time. The mysterious girl has disappeared."
 
     mc "Oof!"
@@ -248,7 +250,7 @@ label forest:
     "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
     mc "Well I guess we set off now!"
     c1 "Y’all do realize this is like a suicide mission don’t you? We have no map, a limited supply of rations, and no leads. We volunteered to help with population control."
-    cs "Yes, this is quite a hopeless quest. But look around you! The world is teeming with beauty. Don’t you want to share this sight with everyone who is stuck within the walls? And what’s the worst that could happen? After all, we can’t die!"
+    c2 "Yes, this is quite a hopeless quest. But look around you! The world is teeming with beauty. Don’t you want to share this sight with everyone who is stuck within the walls? And what’s the worst that could happen? After all, we can’t die!"
     mc "Indeed. It’s far too early to get discouraged now. Come, let us explore this beautiful world."
     "You wander through the forest for some time."
     #Insert boar image
@@ -320,7 +322,7 @@ label gooddragons:
     "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
     menu:
         "Flee from the city":
-            $time = time + 1 
+            $ time += 1 
             "After travelling, you find that you have reached a crossroads."
             jump crossroad
         "Approach the city":
@@ -392,7 +394,7 @@ label goodcitycenter:
             extend " I have indicated a location which many reports have indicated there was a brilliant flash of light on the day of the event."
             mc "Thank you greatly. We truly appreciate your wisdom."
             "You set off towards the marked location on the map."
-            $time = time - 1 
+            $ time -= 1 
             jump templeoftime
         "Nursery":
             "You see a bunch of baby dragons. D'awww how cute."
@@ -482,7 +484,7 @@ label deocide:
 label testend:
     scene bg black
     with fade
-    d "You've reached the end of the game, congratulations"
+    death "You've reached the end of the game, congratulations"
     return
 
 label otherend:
