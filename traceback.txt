@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing C:\Users\Hyungju Moon\Desktop\In-Distorted-Space/game/script.rpy.
-ScriptError: Name u'introduction' is defined twice, at lib/windows-i686/billscript.rpyc:1 and lib/windows-i686/script.rpyc:42.
+While parsing C:\Users\Hyungju Moon\Desktop\In-Distorted-Space/game/stella script.rpy.
+ScriptError: Name u'forest' is defined twice, at lib/windows-i686/script.rpyc:216 and lib/windows-i686/stella script.rpyc:10.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,7 +16,7 @@ Full traceback:
     self.finish_load(stmts, initcode, filename=fn + source)
   File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\script.py", line 414, in finish_load
     bad_node.filename, bad_node.linenumber))
-ScriptError: Name u'introduction' is defined twice, at lib/windows-i686/billscript.rpyc:1 and lib/windows-i686/script.rpyc:42.
+ScriptError: Name u'forest' is defined twice, at lib/windows-i686/script.rpyc:216 and lib/windows-i686/stella script.rpyc:10.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227

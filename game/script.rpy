@@ -18,6 +18,9 @@ define c2 = Character("Tomo-chan")
 define gd = Character("Good Dragon")
 define pg = Character("Innkeeper")
 define mg = Character("Mysterious Girl")
+define gdr = Character("Good Dragon Ruler")
+define gdl = Character("Dragon Librarian")
+define death = Character("God of Death")
 
 #various variable names, to be tested
 $male = False
@@ -29,17 +32,6 @@ $goodDragTown=False
 
 # The game starts here.
 label start:
-    mc "Abandon all hope ye "
-    extend "who enter here"
-
-    menu:
-        "Ok, sure":
-            "wise choice"
-            jump introduction2
-        "Nah":
-            jump crossroad
-
-label introduction2:
     "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
@@ -65,8 +57,32 @@ label introduction2:
     extend " The churches faced revolt, collapse - their afterlife was lost to them forever." 
     "There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
+    "They watch you among the maze of planks that’s Main Street."
+    "Grime-filled eyes sifting through the forest of dirty men and women to stare, a horde of bodies lined up alongside the weed-choked road."
+    "Since the end of Death, maintaining the City had become difficult."
+    "Grass would not be trampled - the fresh planks of new buildings would sprout branches and leaves every spring - the rats that gnawed at the fresh growth too multiplied without end."
+    "They’d taken to dumping all the rats they could find into a fire-pit: even if fire couldn’t kill them, it’d burn away at their flesh."
+    "Sure, the meat would regenerate as soon as you turned away (one of the many gifts that deathlessness had given to all creatures, human and rat alike), but that simply meant more fuel for the flames. It was a stasis of sorts."
+    "You shake your head to clear the constant hissing screams of rat-pits out of your head, and smile for the crowd. You notice that the youngest looks no less than 14. "
+    "When the old people stopped dying, they banned childbirths. It’s a sort of irony - when death died, so did all future generations of the human race."
+    "When death died, so followed many things. You sweep your eyes across the shantytown that’s the outer edge of the City. This is all that is left of humanity."
+    "Immortality for all, shockingly, meant immortality for all - the armored titan"
+    "-ic dragons of the west, originally kept in check by their food supply, multiplied once they refused to die of starvation."
+    "When their food supply also failed to die of starvation...well..."
+    "There was a reason all remaining humanity was crammed inside a single walled city."
+    extend "The reason might have been \"massive amounts of airbourne dragon-tanks.\""
+    "Dragons and men had always been at war, having never managed to get past the racism inherent with the ability or lack thereof of breathing fire. But I digress."
+    "We were discussing the losers that had nothing better to do with their lives except watch a boring bunch like you walk on the street."
+    "They’re here to see the newest dispatch from the Excursion Council: you, Tomo-chan, and Tomo-kun."
+    extend "The fifth such team off on a grand adventure to kick ass and unkill Death."
+    "It just so happens that you’re all out of ass."
+    "You grin at the sullen-looking populace. Their eyes speak of despair, hopelessness - they don’t believe in their salvation, their freedom from the oppression that is deathlessness."
+    "They don’t think you can do it."
+    "Must not make use of their brain cells on a regular basis. This is why you’re part of the elite and they aren’t. Sucks."
+    "The gate looms open ahead of you - the exit from the last bastion of humanity, the walled city of Honno. From here on out, it’s all overgrown wilderness that just won’t die no matter how many times you kill it."
+    "Just the way we like it."
 
-    jump otherend
+    jump forest
 
 label crossroad:
     "You arrive at a crossroads. You see different roads branching to differnt parts of the region."
@@ -196,6 +212,210 @@ label templeoftime:
     mc "We got this far, show us wher ethis space is."
    
     jump otherend
+
+label forest:
+    "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
+    "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
+    mc "Well I guess we set off now!"
+    c1 "Y’all do realize this is like a suicide mission don’t you? We have no map, a limited supply of rations, and no leads. We volunteered to help with population control."
+    cs "Yes, this is quite a hopeless quest. But look around you! The world is teeming with beauty. Don’t you want to share this sight with everyone who is stuck within the walls? And what’s the worst that could happen? After all, we can’t die!"
+    mc "Indeed. It’s far too early to get discouraged now. Come, let us explore this beautiful world."
+    "You wander through the forest for some time."
+    #Insert boar image
+    extend " Suddenly, a wild boar charges out of the forest and attacks!"
+    "Luckily, all three of you are well equipped with tools and healthy."
+    extend " However, the encounter with the boar proves much more difficult than one would anticipate because the boar cannot be killed, merely wounded."
+    "Eventually you tire out the boar and he retreats."
+    #Remove boar image
+    "However, much time has passed and the sun is starting to set."
+    extend " You eat some of the food rations that you set out with, which helps heal you from the wounds acquired during the boar fight."
+    c2 "Hey guys, it’s been a long day. Why don’t we climb up into some trees and call it wraps?"
+    c1 "Are you kidding? We can’t sleep in trees. That’s too close to the skies... and the dragons. We should continue on. MC, what do you think?"
+
+    menu:
+        "Sleep in the trees": #maybe increase the time counter?
+            #tree image
+            "You climb up onto a tree, and set up a hammock of sorts. It’s uncomfortable, but it’ll do."
+            "The next morning, you wake up early and eat some breakfast and set out on your quest again."
+            #abandoned city image
+            "Wow! You stumbled upon an abandoned village."
+            jump abandonedvillage
+        "Continue forward":
+            #abandoned city image
+            "You reach an abandoned village just before the sun sets. How lucky! The three of you find a house to sleep in and spend the night."
+            "The next morning, you wake up early and eat some breakfast and set out on your quest again."
+            jump abandonedvillage
+            
+
+label abandonedvillage:
+    "For the next few days, you wander around the area, making the abandoned village your base."
+    extend " During one of those days, you find a shining rock and decide to take it for luck’s sake."
+    "After several days with no leads, you are faced with the decision of continuing forwards, or staying at your mini basecamp and gathering supplies."
+
+    menu:
+        "Continue on":
+            jump clearing
+        "Stay at the abandoned village": #potential time counter +1
+            "After wandering for another several days and finding nothing of interest, you decide to continue on."
+            jump clearing
+
+label clearing:
+    "Eventually, you reach a clearing. It has been a long day of journeying, and you and your companions are all tired."
+    extend " Suddenly, a giant centipede attacks you!"
+    #Insert picture of giant centipede
+    "You try to fight back, but the three of you are exhausted. You are less so trying to attack, and more so trying not to get mauled."
+
+    #Insert DRAGON picture***
+    "A dragon SWOOPS in from the sky. The three of you cower in fear."
+    "Instead, the dragon grabs hold of the giant centipede, and you have been saved."
+    "Your heart is still pounding from the sight of the giant beast."
+    extend " You can continue travelling towards..."
+
+    menu: 
+        "The jungle where the dragon was headed":
+            jump gooddragons
+        "Continue traveling in the direction that you were headed":
+            "After travelling, you find that you have reached a crossroads."
+            jump crossroad
+
+label gooddragons:
+    #Insert good dragon jungle city
+    "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
+    menu:
+        "Flee from the city":
+            $time = time + 1 
+            "After travelling, you find that you have reached a crossroads."
+            jump crossroad
+        "Approach the city":
+            c1 "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
+            c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
+            jump gooddragoncity
+
+label goodcityfront:
+    "Nevertheless, you decide to cautiously approach the city."
+    "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
+    #*Insert ROAR sound clip*
+    menu:
+        "FLEE":
+            jump deadend
+        "Present the Glowing Rock":
+            "The dragon seems pleased, and escorts you into the city."
+            jump goodcityinterior
+        #"Leave behind c1, whose whining was not helpful anyway and FLEE"
+        #    "After running away for your life, you and c2 find that you have arrived in front of a crossroads."
+        #    jump crossroad
+        
+label goodcityinterior:
+    "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
+    "You follow the gatekeeper towards what appears to be the center spire of the city."
+    "You approach a regal looking dragon. Suddenly, a voice appears in your head"
+    gdr "Hello tiny young ones."
+    c2 "Wow! How are you talking to us?"
+    gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
+    extend " Ages ago, we once were friends even."
+    c1 "Hah as if we would believe you who have so terrorized us."
+    c2 "(((SHHHH DO YOU WANT THEM TO EAT YOU?)))"
+    gdr "Heh. We won't eat you, not having presented us with such a lovely gift. I will gladly accept it into our collection."
+    extend " And truly, the dragons here do not hate humanity, even though our mindset is a rare one."
+    mc "Well perhaps we can bring back history and  befriend you too."
+    gdr "Perhaps. We will see how the fates play out. You are free to stay in our city for as long as you would like."
+    mc "Thank you so much for your offer."
+    gdr "None of the dragons here actively hate humans, but it has been ages since we have seen any of your kind."
+    extend " So realize that many of the dragons will be cautious. In fact, some of our youngsters may never have seen any humans at all."
+    c2 "Will do! I can't believe we're in a dragon city!"
+    gdr "Indeed. Here, let me show you to the city center."
+    jump goodcitycenter
+
+label goodcitycenter:
+    menu:
+        "Fountain":
+            "You see many dragons gathered around a giant fountain."
+            jump goodcitycenter
+        "Library":
+            "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
+            gdl "Humans! I have not seen any of your kind in eons."
+            c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
+            gdl "So, you must be here to seek wisdom."
+            c1 "Indeed. We want to restore Death to this world."
+            gdl "Death... Death was a concept much more real to humans than to dragons before the event. Why would you want to do such a thing?"
+            c1 "Your kind terrorizes all other animals on Earth. Before, at least there was balance."
+            gdl "I see. Well, I am not the judge of Morality. That role goes to my brother whom you already met."
+            extend " I am simply the guardian of knowledge. And if my brother decided that you were worthy, then so be it."
+            "The dragon flies to a high perch and retreives a scroll."
+            gdl "On this scroll there is a map."
+            extend " I have indicated a location which many reports have indicated there was a brilliant flash of light on the day of the event."
+            mc "Thank you greatly. We truly appreciate your wisdom."
+            "You set off towards the marked location on the map."
+            $time = time - 1 
+            jump templeoftime
+        "Nursery":
+            "You see a bunch of baby dragons. D'awww how cute."
+            jump goodcitycenter
+        "Leave the city":
+            c1 "We had nothing to do in a city of DRAGONS anyway. Good riddance."
+            "You walk away from the magestic city and wander until you reach a crossroads."
+            jump crossroad
+
+label indistortedspace:
+    "You feel like you are floating, yet CRUSHED by the pressure at the same time."
+    extend " You are burning and freezing."
+    extend " You are in pain, but also numb."
+    extend " The world is dark, but blindingly bright."
+    "You are In Distorted Space,"
+    extend " stuck In Broken Time."
+    "You wander around blindly... Well as much as you could consider it 'wandering'"
+    extend " It's more like swimming in some sort of jello. Your limbs feel heavy and given that you can't see anything, you can't actually tell if you're moving or not."
+    "And you slug on..."
+    extend " and on..."
+    extend " and on..."
+    extend " and on..."
+    extend " and on..."
+    c2 "EEK! I bumped into something."
+    "\"Who has entered this dreary realm, the graveyard for gods?\""
+    c1 "More like we should be asking who YOU are."
+    mc "Relax c1. We are here to restore death."
+    "The figure laughes a slightly maniacal laugh. \"You what?\" Ahahahahaha"
+    "\"You all must be mad. Entirely mad.\""
+    "\"People search to banish death for ages, and within 20 years, people want to bring death back?\""
+    "\"Mad. Entirely mad. The entire lot of you.\""
+    death " I came here out of self-sacrifice and you humans are telling me that you want me BACK?"
+    extend " But you know what? I'll entertain you."
+    death "Luckily for you, this place is horribly uncomfortable and I'm getting quite bored."
+    death "So how are you going to get us out?"
+    mc "Uhhhhh... RIP WE DIDN'T THINK THAT FAR. (In fact, the writers of this plot did not think of that either)"
+    death "HAHAHA AS IF you mortals could possibly have that power."
+    extend " Please, of course I can get us out of here. I only stayed In Distorted Space because I thought that humanity wanted it."
+    death "Apparently in this day and age, humans don't even know how to appreciate my great self-sacrifice."
+    extend " But yes I'll come with you. Perhaps a touch of Death will make you remember how kind my actions were."
+    death "Let's begin. Brace yourselves."
+    death "I am the MIGHTY and ALL POWERFUL DEATH."
+    extend " TIME, hear my cry. The balance of the world must be restored."
+    extend " For in truth, the goddess was wrong. It is not \"Neither can live while the other survives,\""
+    extend " but \"Earth. Fire. Air. Water. Only the Avatar can master all four elements and bring balance to the world.\""
+    death "Wait that's not it."
+    extend " ROW ROW FIGHT THE POWAH."
+    death "Wait that's not it either."
+    extend " Wait it's this one, I'm sure it's this one."
+    extend " The world needs darkness and light, shadow and illumination, because without the two there can be no balance."
+    "Suddenly, A blinding light envelops you, and the warmth of existance once again fills your limbs. You can feel again, you can breathe again. You are alive again. You are back in the real world."
+    if time>0:
+        jump failend
+    else:
+        jump goodend
+
+label deadend:
+    "The dragon eats you and you exist in its stomach acid for all of eternity."
+    return
+
+label failend:
+    "You failed. You took so long that by the time death was revived, the entire planetary ecosystem had collapsed. The dragons captured all the humans and placed them in farms."
+    extend " The tenuous reliance by dragons on human farms for sustenance meant that when humans started dying again, the dragons died of starvation."
+    "Every human on earth was hunted down until there were none left. And the remaining dragons scavenged for prey until they were driven to cannibalism."
+    return
+
+label goodend:
+    ""
+    return
 
 label deocide:
     "gol dies"
