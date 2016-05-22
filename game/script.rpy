@@ -20,6 +20,7 @@ image bg refugeetown2 = "rivertown3.jpg"
 image bg crater = "Crater.jpg"
 image bg templeoftime2 = "templeoftime.png"
 image bg darktown = "darktown.jpg"
+image bg treetopsunrise = "treetopsunrise.jpg"
 
 image default test = "test.png"
 image default flip = im.Flip ("test.png", horizontal=True)
@@ -295,8 +296,12 @@ label forest:
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
     "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
     mc "Well I guess we set off now!"
-    c1 "Y’all do realize this is like a suicide mission don’t you? We have no map, a limited supply of rations, and no leads. We volunteered to help with population control."
-    c2 "Yes, this is quite a hopeless quest. But look around you! The world is teeming with beauty. Don’t you want to share this sight with everyone who is stuck within the walls? And what’s the worst that could happen? After all, we can’t die!"
+    c1 "Y’all do realize this is like a suicide mission don’t you?"
+    extend " We have no map, a limited supply of rations, and no leads. We volunteered to help with population control."
+    c2 "Yes, this is quite a hopeless quest."
+    extend " But look around you! The world is teeming with beauty."
+    extend " Don’t you want to share this sight with everyone who is stuck within the walls?"
+    extend " And what’s the worst that could happen? After all, we can’t die!"
     mc "Indeed. It’s far too early to get discouraged now. Come, let us explore this beautiful world."
     "You wander through the forest for some time."
     show boar neu #right, facing left
@@ -315,6 +320,8 @@ label forest:
             scene bg treetop
             with fade
             "You climb up onto a tree, and set up a hammock of sorts. It’s uncomfortable, but it’ll do."
+            scene bg treetopsunrise
+            with fade
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             scene bg abandonedvillage2
             with fade
@@ -439,10 +446,10 @@ label goodcitycenter:
         "Library":
             scene bg library2
             with fade
-                show kun neu #most left, facing right
-                show chan neu #mid, facing right
-                show mcg neu #least left, facing right
-                #*** INSERT DRAGON PICTURE ***
+            show kun neu #most left, facing right
+            show chan neu #mid, facing right
+            show mcg neu #least left, facing right
+            #*** INSERT DRAGON PICTURE ***
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
             c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
