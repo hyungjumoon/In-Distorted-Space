@@ -48,17 +48,17 @@ image gk neu = "dragonruler.png"
 image lib neu = "librarian.png"
 
 # Declare characters used by this game.
-define mc = Character("Main Character") #chhange this, add color
-define gol = Character("Goddess of Life")
-define dk = Character("Dragon King")
-define c1 = Character("Tomo-kun")
-define c2 = Character("Tomo-chan")
-define gd = Character("Good Dragon")
-define pg = Character("Innkeeper")
-define mg = Character("Mysterious Girl")
-define gdr = Character("Good Dragon Ruler")
-define gdl = Character("Dragon Librarian")
-define death = Character("Death")
+define mc = Character("Main Character", color="#E68260") #chhange this, add color
+define gol = Character("Goddess of Life", color="#A7F4FC")
+define dk = Character("Dragon King", color="#0B004D")
+define c1 = Character("Tomo-kun", color="#872424")
+define c2 = Character("Tomo-chan", color="#8000FC")
+define gd = Character("Good Dragon", color="#0B004D")
+define pg = Character("Innkeeper", color="#EFF268")
+define mg = Character("Mysterious Girl", color="#8DFCC1")
+define gdr = Character("Good Dragon Ruler", color="#0B004D")
+define gdl = Character("Dragon Librarian", color="#0B004D")
+define death = Character("Death", color="#0E0636")
 
 # Transform declarations
 transform midleft:
