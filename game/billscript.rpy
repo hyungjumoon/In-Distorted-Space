@@ -50,4 +50,4 @@ label introduction:
     "Just the way we like it."
 
 
-    jump otherend
+    return
