@@ -40,7 +40,7 @@ label start:
             jump crossroad
 
 label introduction2:
-    "Nobody really noticed when Death died. was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t"
+    "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
     extend " It was, perhaps, even the end to that struggle we know as the human condition."
@@ -171,7 +171,7 @@ label templeoftime:
     mc "What?! Who are you?! \"Vanquished himself\"?!"
     mg "Find the truth yourself..."
 
-    "After a blur and dizzying sway, you and your companions find yourself on the floor of the Temple of Time."
+    "After a blur and dizzying sway, you and your companions find yourself on the floor of the Temple of Time. The mysterious girl has disappeared."
 
     mc "Oof!"
     c2 "Ouch!"
@@ -182,11 +182,24 @@ label templeoftime:
 
     mc "Who are you?"
     gol "I am the Goddess of Life. I know why you have come."  
+    
     c2 "Who? Never heard of you?"
+    
     gol "I am the counterpart to Death. Since the dawn of time, we struggle against each other, each not being able to best the other."
-    gol "Until a few years ago, "
-
+    gol "Then a new avatar of Death appeared. This one was different. This one was unwilling to harm others for his benefit."
+    gol "I told him that this world needed for him to disappear. Selflessly, he agreed."
+    gol "However, now as time passes, I realize that the world is suffering without Death. The world needs us both to function."
+    gol "Heroes, if you wish to bring Death back, you must go where none have gone, not even I."
+    gol "when Death died, the paradox left a distortion in space. Enter this dsitorted space and bring him back!"
+    
+    c1 "How can we trust you? For all we know, you're insane!"
+    mc "We got this far, show us wher ethis space is."
+   
     jump otherend
+
+label deocide:
+    "gol dies"
+    return
 
 label testend:
     d "You've reached the end of the game, congratulations"
