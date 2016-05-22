@@ -136,7 +136,7 @@ label baddragons:
     "bad drags"
     jump testend
 
-label gooddragons:
+label gooddragons2:
     "good drags"
     jump otherend
 
@@ -152,7 +152,7 @@ label templeoftime:
     mg "..it's been over twenty years since then, huh"
     mc "Excuse me, what are you talking to yourself about? Perhaps \"that event\"?"
 
-    "Startled, teh girl looks up."
+    "Startled, the girl looks up."
 
     mg "I'm sorry, I didn't realize there were people here."
     c2 "Can you help us? Do you know anything about what happened here?"

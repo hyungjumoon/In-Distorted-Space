@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing C:\Users\Hyungju Moon\Desktop\In-Distorted-Space/game/script2.rpy.
-ScriptError: Name u'gooddragons' is defined twice, at lib/windows-i686/script.rpyc:139 and lib/windows-i686/script2.rpyc:74.
+While running game code:
+ScriptError: Name u'forest' is defined twice, at lib/windows-i686/script2.rpyc:9 and lib/windows-i686/stella script.rpyc:9.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,7 +16,7 @@ Full traceback:
     self.finish_load(stmts, initcode, filename=fn + source)
   File "C:\Users\Hyungju Moon\Desktop\renpy-6.99.10-sdk\renpy\script.py", line 414, in finish_load
     bad_node.filename, bad_node.linenumber))
-ScriptError: Name u'gooddragons' is defined twice, at lib/windows-i686/script.rpyc:139 and lib/windows-i686/script2.rpyc:74.
+ScriptError: Name u'forest' is defined twice, at lib/windows-i686/script2.rpyc:9 and lib/windows-i686/stella script.rpyc:9.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
