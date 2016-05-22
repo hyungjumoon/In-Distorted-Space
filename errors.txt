@@ -2,6 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/script2.rpy", line 153: Tab characters are not allowed in Ren'Py scripts.
+File "game/stella script.rpy", line 160: expected statement.
+    <<<<<<< HEAD:game/stella script.rpy
+                ^
+
+File "game/stella script.rpy", line 166: expected statement.
+    =======
+          ^
+
+File "game/stella script.rpy", line 168: expected statement.
+    >>>>>>> origin/master:game/stella script.rpy
+                         ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227

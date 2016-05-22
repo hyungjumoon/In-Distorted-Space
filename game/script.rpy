@@ -35,12 +35,12 @@ label start:
     menu:
         "Ok, sure":
             "wise choice"
-            jump introduction
+            jump introduction2
         "Nah":
             jump crossroad
 
-label introduction:
-    "Nobody really noticed when Death died."
+label introduction2:
+    "Nobody really noticed when Death died. was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t was the end to the great question that dogged in our footsteps, sooner or later - when comes our t"
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
     extend " It was, perhaps, even the end to that struggle we know as the human condition."
@@ -80,9 +80,9 @@ label crossroad:
             "You decide to follow the leafy road."
             $time = time + 1
             jump gooddragons
-        "The Cliffs":
-            "You decide to follow thhe rocky road."
-            jump baddragons
+        #"The Cliffs":
+        #    "You decide to follow the rocky road."
+        #    jump baddragons
         "The Stream":
             "You decide to follow the road next to the river."
             jump refugeetown
@@ -169,6 +169,22 @@ label templeoftime:
     mg "Very well, I will help you. "
     mg "I have certain...connections with an individual. I can take you to the place Death vanquished himself."
     mc "What?! Who are you?! \"Vanquished himself\"?!"
+    mg "Find the truth yourself..."
+
+    "After a blur and dizzying sway, you and your companions find yourself on the floor of the Temple of Time."
+
+    mc "Oof!"
+    c2 "Ouch!"
+    c1 "Tch!"
+    c2 "Where are we?"
+
+    "\"You're at the Temple of Time,\" a voice responds"
+
+    mc "Who are you?"
+    gol "I am the Goddess of Life. I know why you have come."  
+    c2 "Who? Never heard of you?"
+    gol "I am the counterpart to Death. Since the dawn of time, we struggle against each other, each not being able to best the other."
+    gol "Until a few years ago, "
 
     jump otherend
 

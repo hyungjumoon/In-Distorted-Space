@@ -35,7 +35,7 @@ label introduction:
     "When death died, so followed many things. You sweep your eyes across the shantytown that’s the outer edge of the City. This is all that is left of humanity."
     "Immortality for all, shockingly, meant immortality for all - the armored titan"
     "-ic dragons of the west, originally kept in check by their food supply, multiplied once they refused to die of starvation."
-	"When their food supply also failed to die of starvation...well..."
+    "When their food supply also failed to die of starvation...well..."
     "There was a reason all remaining humanity was crammed inside a single walled city."
     extend "The reason might have been \"massive amounts of airbourne dragon-tanks.\""
     "Dragons and men had always been at war, having never managed to get past the racism inherent with the ability or lack thereof of breathing fire. But I digress."
