@@ -3,17 +3,8 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 
-# Declare characters used by this game.
-define mc = Character("Main Character") #chhange this, add color
-define d = Character("Death")
-define gol = Character("Goddess of Life")
-define dk = Character("Dragon King")
-define c1 = Character("Companion 1")
-define c2 = Character("Companion 2")
-define gd = Character("Good Dragon")
-define pg = Character("Innkeeper")
-
-define 
+define gdr = Character("Good Dragon Ruler")
+define gdl = Character("Dragon Librarian")
 
 label forest:
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
@@ -100,7 +91,7 @@ label goodcityfront:
     menu:
         "FLEE":
             jump deadend
-        "Present the Shiny Rock":
+        "Present the Glowing Rock":
             "The dragon seems pleased, and escorts you into the city."
             jump goodcityinterior
         #"Leave behind c1, whose whining was not helpful anyway and FLEE"
@@ -110,8 +101,63 @@ label goodcityfront:
 label goodcityinterior:
     "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
     "You follow the gatekeeper towards what appears to be the center spire of the city."
-    "You approach a golden dragon. Suddenly, a voice appears in your head"
+    "You approach a regal looking dragon. Suddenly, a voice appears in your head"
+    gdr "Hello tiny young ones."
+    c2 "Wow! How are you talking to us?"
+    gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
+    extend " Ages ago, we once were friends even."
+    c1 "Hah as if we would believe you who have so terrorized us."
+    c2 "(((SHHHH DO YOU WANT THEM TO EAT YOU?)))"
+    gdr "Heh. We won't eat you, not having presented us with such a lovely gift. I will gladly accept it into our collection."
+    extend " And truly, the dragons here do not hate humanity, even though our mindset is a rare one."
+    mc "Well perhaps we can bring back history and  befriend you too."
+    gdr "Perhaps. We will see how the fates play out. You are free to stay in our city for as long as you would like."
+    mc "Thank you so much for your offer."
+    gdr "None of the dragons here actively hate humans, but it has been ages since we have seen any of your kind."
+    extend " So realize that many of the dragons will be cautious. In fact, some of our youngsters may never have seen any humans at all."
+    c2 "Will do! I can't believe we're in a dragon city!"
+    gdr "Indeed. Here, let me show you to the city center."
+    jump goodcitycenter
 
+label goodcitycenter:
+    menu:
+        "Fountain":
+            "You see many dragons gathered around a giant fountain."
+            jump goodcitycenter
+        "Library":
+            "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
+            gdl "Humans! I have not seen any of your kind in eons."
+            c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
+            gdl "So, you must be here to seek wisdom."
+            c1 "Indeed. We want to restore Death to this world."
+            gdl "Death... Death was a concept much more real to humans than to dragons before the event. Why would you want to do such a thing?"
+            c1 "Your kind terrorizes all other animals on Earth. Before, at least there was balance."
+            gdl "I see. Well, I am not the judge of Morality. That role goes to my brother whom you already met."
+            extend " I am simply the guardian of knowledge. And if my brother decided that you were worthy, then so be it."
+            "The dragon flies to a high perch and retreives a scroll."
+            gdl "On this scroll there is a map."
+            extend " I have indicated a location which many reports have indicated there was a brilliant flash of light on the day of the event."
+            mc "Thank you greatly. We truly appreciate your wisdom."
+            "You set off towards the marked location on the map."
+            $time = time - 1 
+            jump templeoftime
+        "Nursery":
+            "You see a bunch of baby dragons. D'awww how cute."
+            jump goodcitycenter
+        "Leave the city":
+            c1 "We had nothing to do in a city of DRAGONS anyway. Good riddance."
+            "You walk away from the magestic city and wander until you reach a crossroads."
+            jump crossroad
+
+label indistortedspace:
+	"You feel like you are floating, yet CRUSHED by the pressure at the same time."
+	extend " You are burning and freezing."
+	extend " You are in pain, but also numb."
+	extend " The world is dark, but blindingly bright."
+	"You are In Distorted Space,"
+	extend " stuck In Broken Time."
+	"You wander around blindly... Well as much as you could consider it 'wandering'"
+	extend " It's more like swimming in some sort of "
 
 label deadend:
     "The dragon eats you and you exist in its stomach acid for all of eternity."
