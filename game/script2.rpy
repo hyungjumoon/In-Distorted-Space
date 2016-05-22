@@ -13,25 +13,7 @@ define c2 = Character("Companion 2")
 define gd = Character("Good Dragon")
 define pg = Character("Innkeeper")
 
-#various variable names, to be tested
-$male = False
-$lovepoints = 1
-$food = 0
-$hp = 100
-$time = 0
-$goodDragTown=False
-
-# The game starts here.
-label start:
-    mc "Abandon all hope ye "
-    extend "who enter here"
-
-    menu:
-        "Ok, sure":
-            "wise choice"
-            jump introduction
-        "Nah":
-            jump crossroad
+define 
 
 label forest:
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
@@ -117,7 +99,6 @@ label goodcityfront:
     #*Insert ROAR sound clip*
     menu:
         "FLEE":
-            "The dragon eats you and you exist in its stomach acid for all of eternity."
             jump deadend
         "Present the Shiny Rock":
             "The dragon seems pleased, and escorts you into the city."
@@ -127,9 +108,11 @@ label goodcityfront:
         #    jump crossroad
         
 label goodcityinterior:
-    "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."   
-    
+    "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
+    "You follow the gatekeeper towards what appears to be the center spire of the city."
+    "You approach a golden dragon. Suddenly, a voice appears in your head"
 
 
 label deadend:
+    "The dragon eats you and you exist in its stomach acid for all of eternity."
     return
