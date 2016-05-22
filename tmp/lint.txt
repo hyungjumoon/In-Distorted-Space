@@ -1,0 +1,78 @@
+﻿
+Ren'Py 6.99.10.1227 lint report, generated at: Sun May 22 07:35:28 2016
+
+lib/windows-i686/00definitions.rpyc:333 'define fade' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:334 'define dissolve' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:335 'define pixellate' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:338 'define wiperight' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:339 'define wipeleft' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:340 'define wipeup' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:341 'define wipedown' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:343 'define slideright' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:344 'define slideleft' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:345 'define slideup' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:346 'define slidedown' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:348 'define slideawayright' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:349 'define slideawayleft' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:350 'define slideawayup' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:351 'define slideawaydown' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:353 'define irisout' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:354 'define irisin' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:357 'define pushright' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:358 'define pushleft' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:359 'define pushup' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:360 'define pushdown' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:363 'define zoomin' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:364 'define zoomout' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:365 'define zoominout' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:369 'define vpunch' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:370 'define hpunch' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:373 'define blinds' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:374 'define squares' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/00definitions.rpyc:377 'define _narrator' replaces a Ren'Py built-in name, which may cause problems.
+
+lib/windows-i686/script.rpyc:5 Image bg test uses file '.jpg', which is not loadable.
+
+lib/windows-i686/script.rpyc:235 'music/Refuge Town Utawarerumono.mp3' is not loadable
+
+
+Statistics:
+
+The game contains 267 dialogue blocks, containing 3,628 words and 19,692
+characters, for an average of 13.6 words and 74 characters per block.
+
+The game contains 7 menus, 46 images, and 35 screens.
+
+
+Remember to set config.developer to False before releasing.
+
+Lint is not a substitute for thorough testing. Remember to update Ren'Py
+before releasing. New releases fix bugs and improve compatibility.
