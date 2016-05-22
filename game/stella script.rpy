@@ -184,8 +184,27 @@ label indistortedspace:
     death "Let's begin. Brace yourselves."
     death "I am the MIGHTY and ALL POWERFUL DEATH."
     extend " TIME, hear my cry. The balance of the world must be restored."
-    extend " For in truth, "
+    extend " For in truth, the goddess was wrong. It is not \"Neither can live while the other survives,\""
+    extend " but \"Earth. Fire. Air. Water. Only the Avatar can master all four elements and bring balance to the world.\""
+    death "Wait that's not it."
+    extend " ROW ROW FIGHT THE POWAH."
+    death "Wait that's not it either."
+    extend " Wait it's this one, I'm sure it's this one."
+    extend " The world needs darkness and light, shadow and illumination, because without the two there can be no balance."
+    "Suddenly, A blinding light envelops you, and the warmth of existance once again fills your limbs. You can feel again, you can breathe again. You are alive again. You are back in the real world."
+    if time>0:
+        jump failend
+    else:
+        jump goodend
 
 label deadend:
     "The dragon eats you and you exist in its stomach acid for all of eternity."
     return
+
+label failend:
+    "You failed. You took so long that by the time death was revived, the entire planetary ecosystem had collapsed. The dragons captured all the humans and placed them in farms."
+    extend " The tenuous reliance by dragons on human farms for sustenance meant that when humans started dying again, the dragons died of starvation."
+    "Every human on earth was hunted down until there were none left. And the remaining dragons scavenged for prey until they were driven to cannibalism."
+
+label goodend:
+    ""
