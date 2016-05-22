@@ -207,4 +207,6 @@ label failend:
     "Every human on earth was hunted down until there were none left. And the remaining dragons scavenged for prey until they were driven to cannibalism."
 
 label goodend:
-    ""
+    "With Death returning to the world, balance has been restored. The Dragons will mostly die out because they don't have enough sustenance."
+    extend "Meanwhile, in the last stronghold of humanity there will be a decrease in population because the elderly and sick have died."
+    "However, as per usual, the resilient race known as humanity will bounce back, and everything eventually returns to the status quo before In Broken Time."
