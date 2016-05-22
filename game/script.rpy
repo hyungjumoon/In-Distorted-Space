@@ -17,6 +17,7 @@ define c1 = Character("Tomo-kun")
 define c2 = Character("Tomo-chan")
 define gd = Character("Good Dragon")
 define pg = Character("Innkeeper")
+define mg = Character("Mysterious Girl")
 
 #various variable names, to be tested
 $male = False
@@ -59,7 +60,10 @@ label introduction:
     "There was no danger anymore of alcohol poisoning - so the celebrations became a bit more drunken."
     "To nearly all, life glittered with a sheen unseen, perhaps what it truly was: well and perfect, when the grime of certain death was scrubbed away."
     "So for weeks, we held Death a mighty funeral, banquets, games. Perhaps somebody mourned him, but the rest of us were merely freedmen."
-    "Of course, behind all this, there were a few chinks needed smoothing out: the churches faced revolt, collapse - their afterlife was lost to them forever. There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
+    extend " It was the best of times,"
+    " it was the worst of times."
+    extend " The churches faced revolt, collapse - their afterlife was lost to them forever." 
+    "There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
 
     jump otherend
@@ -114,12 +118,12 @@ label refugeetown:
     "Your innkeeper arrives with your breakfast of toast and marmalade."
 
     pg "Sorry I couldn't help but overhear your conversatoin. You're looking for Death?"
-    c2 "It's none of your business."
+    c1 "It's none of your business."
     "Tomo-kun looks like he would like to say more, but upon seeing the innkeeper reach down, he backs off."
     mc "Do you have any information that might help?"
     pg "Well, not really. However, remember the stowaway I helped?"
     extend " After we were ousted from my ship, he went off with an acquaintance and I net either of them again."
-    c1 "Why does tha tmatter?"
+    c2 "Why does that matter?"
     pg "That was the day of the event. They coudln't have died. But I couldn't find them no matter how hard I looked."
     pg "Furhtermore there was a flash of light from the area they went to. It all seems very mysterious doesn't it?"
     mc "Given the date, yea, it is. Can you please tell us where they went?"
@@ -137,7 +141,35 @@ label gooddragons:
     jump otherend
 
 label templeoftime:
-    "temple of time"
+    "After a long and arduous travel, the party arrives at the location marked on the map."
+    "Once there, the party is struck silent by the sight of an aging massive crater."
+    c2 "What happened here?"
+    c1 "Nothing good, I bet"
+    mc "I can see a person over there, we should ask them for any leads."
+
+    "The party approaches a mysterious girl staring morosely at the crater."
+
+    mg "..it's been over twenty years since then, huh"
+    mc "Excuse me, what are you talking to yourself about? Perhaps \"that event\"?"
+
+    "Startled, teh girl looks up."
+
+    mg "I'm sorry, I didn't realize there were people here."
+    c2 "Can you help us? Do you know anything about what happened here?"
+    mg "This crater predates the event you are referring to."
+    extend " Although to say that it is was unrelated is incorrect."
+    c1 "Stop twisting your words and get to the point. We're looking for the truth of what happened and how to fix it."
+    mg "Mmm, is that so? That's nice..."
+    extend "Heroes trying to right the worongs of this world."
+    mg "Although, the world was reduced to this state by one trying to right the worng behind this crater."
+    mg "Tell me, are you sure that you are in the right?"
+    mc "Right or wrong, this world must change. With no end, there are no beginnings either."
+    mg "True..."
+    "The girl ponders for a bit."
+    mg "Very well, I will help you. "
+    mg "I have certain...connections with an individual. I can take you to the place Death vanquished himself."
+    mc "What?! Who are you?! \"Vanquished himself\"?!"
+
     jump otherend
 
 label testend:
