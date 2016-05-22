@@ -57,6 +57,7 @@ label start:
     extend " The churches faced revolt, collapse - their afterlife was lost to them forever." 
     "There were a few gruesome attempts at forcibly crossing that forbidden barrier between life and death, trying to claim their lives’ investment in holier things. But they were small bumps in the collective good feeling."
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
+    #insert bg here
     "They watch you among the maze of planks that’s Main Street."
     "Grime-filled eyes sifting through the forest of dirty men and women to stare, a horde of bodies lined up alongside the weed-choked road."
     "Since the end of Death, maintaining the City had become difficult."
@@ -209,9 +210,9 @@ label templeoftime:
     gol "when Death died, the paradox left a distortion in space. Enter this dsitorted space and bring him back!"
     
     c1 "How can we trust you? For all we know, you're insane!"
-    mc "We got this far, show us wher ethis space is."
+    mc "We got this far, show us where this space is."
    
-    jump otherend
+    jump indistortedspace
 
 label forest:
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
@@ -246,7 +247,6 @@ label forest:
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             jump abandonedvillage
             
-
 label abandonedvillage:
     "For the next few days, you wander around the area, making the abandoned village your base."
     extend " During one of those days, you find a shining rock and decide to take it for luck’s sake."
@@ -289,7 +289,7 @@ label gooddragons:
         "Approach the city":
             c1 "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
             c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
-            jump gooddragoncity
+            jump goodcityfront
 
 label goodcityfront:
     "Nevertheless, you decide to cautiously approach the city."
@@ -414,7 +414,9 @@ label failend:
     return
 
 label goodend:
-    ""
+    "With Death returning to the world, balance has been restored. The Dragons will mostly die out because they don't have enough sustenance."
+    extend "Meanwhile, in the last stronghold of humanity there will be a decrease in population because the elderly and sick have died."
+    "However, as per usual, the resilient race known as humanity will bounce back, and everything eventually returns to the status quo before In Broken Time."
     return
 
 label deocide:
