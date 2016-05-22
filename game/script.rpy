@@ -129,8 +129,6 @@ label start:
     $ hp = 100
     $ time = 0
     $ goodDragTown=False
-    #chnage for test pruposes
-    jump indistortedspace
 
 label introduction:
     scene bg black
