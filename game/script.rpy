@@ -51,14 +51,14 @@ image lib neu = "librarian.png"
 define mc = Character("Main Character", color="#E68260") #chhange this, add color
 define gol = Character("Goddess of Life", color="#A7F4FC")
 define dk = Character("Dragon King", color="#7057FF")
-define c1 = Character("Tomo-kun", color="#872424")
-define c2 = Character("Tomo-chan", color="#8000FC")
+define c1 = Character("Tomo-kun", color="#FC3030")
+define c2 = Character("Tomo-chan", color="#7AFFAD")
 define gd = Character("Good Dragon", color="#7057FF")
 define pg = Character("Innkeeper", color="#EFF268")
 define mg = Character("Mysterious Girl", color="#8DFCC1")
 define gdr = Character("Good Dragon Ruler", color="#7057FF")
 define gdl = Character("Dragon Librarian", color="#7057FF")
-define death = Character("Death", color="#0E0636")
+define death = Character("Death", color="#CFC7FF")
 
 # Transform declarations
 transform midleft:
@@ -113,7 +113,6 @@ transform glib:
     xanchor 0.7
     xpos 1.0
 
-
 # The game starts here.
 label start:
     #various variable names, to be tested
@@ -129,6 +128,8 @@ label start:
 label introduction:
     scene bg black
     with fade
+    play music "music/Intro SSY.mp3"
+
     "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
@@ -184,6 +185,8 @@ label introduction:
     "Must not make use of their brain cells on a regular basis. This is why you’re part of the elite and they aren’t. Sucks."
     "The gate looms open ahead of you - the exit from the last bastion of humanity, the walled city of Honno. From here on out, it’s all overgrown wilderness that just won’t die no matter how many times you kill it."
     "Just the way we like it."
+    
+    stop music
     scene bg darktown
     with moveoutleft
 
@@ -192,6 +195,8 @@ label introduction:
 label crossroad:
     scene bg crossroad2
     with fade
+    play music "music/crossroads NGNL.mp3"
+
     show kun neu at midright
     with moveinright
     show chan neu at midcenter
@@ -209,17 +214,20 @@ label crossroad:
         "The Jungle":
             "You decide to follow the leafy road."
             $ time += 1
+            stop music
             jump gooddragons
         #"The Cliffs":
         #    "You decide to follow the rocky road."
         #    jump baddragons
         "The Stream":
             "You decide to follow the road next to the river."
+            stop music
             jump refugeetown
 
 label refugeetown:
     scene bg refugeetown2
     with fade
+    play music "music/Refuge Town Utawarerumono.mp3"
     show kun neu at midright
     with moveinright
     show chan neu at midcenter
@@ -231,12 +239,14 @@ label refugeetown:
     c1 "Eh. This area looks lawless to me. We're probably going to get robbed and murdered in our sleep."
     c2 "Well, at least we'll die in a comfortable bed instead of on the hard ground, I see an inn over there!"
     mc "Agreed, we need a place to spend the night. The town may look sketchy, but the inn looks safe."
-
+    
+    stop music
     scene bg refugeetown2
     with moveoutleft
 
     scene bg inn2
     with fade
+    play music "music/Inn Shirobako.mp3"
     show kun neu at midright
     with moveinright
     show chan neu at midrighty
