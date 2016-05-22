@@ -37,6 +37,10 @@ image kun neu = "tomokun.png"
 image kun neu flip = im.Flip ("tomokun.png", horizontal=True)
 image chan neu = "tomochan.png"
 image chan neu flip = im.Flip ("tomochan.png", horizontal=True)
+image pd neu = "plotdevice.png"
+image pd neu flip = im.Flip ("plotdevice.png", horizontal=True)
+image boar neu = "boar.png"
+image centipede neu = "centipede.png"
 
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
@@ -133,11 +137,13 @@ label start:
 label crossroad:
     scene bg crossroad2
     with fade
+    show kun neu #most left
+    show chan neu #mid
+    show mcg neu #least left
     "You arrive at a crossroads. You see different roads branching to differnt parts of the region."
     "One road, lined with trees, leads to a leafy jungle."
     extend " Another road cobbled with stones leads to some looming cliffs."
     extend " The final road follows a flowing river."
-
     "In which direction do you wish to go?"
     menu:      #add dialogue while travelling
         "The Jungle":
@@ -154,6 +160,9 @@ label crossroad:
 label refugeetown:
     scene bg refugeetown2
     with fade
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     "You arrive at a modest but dilapidated town. It appears to be inhabited by humans"
     c2 "Oh look! It's a town of people! It's been a while since we hmet other humans!"
     c1 "Eh. This area looks lawless to me. We're probably going to get robbed and murdered in our sleep."
@@ -162,6 +171,10 @@ label refugeetown:
 
     scene bg inn2
     with fade
+    show inn neu #right facing left
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     "Upon arriving in the inn, you are greeted by an attractive innkeeper."
     pg "Welcome to my inn? You don't look like you're from around here."
     mc "We would like a place to stay the night, along with some food."
@@ -213,12 +226,16 @@ label templeoftime:
     with fade
     "After a long and arduous travel, the party arrives at the location marked on the map."
     "Once there, the party is struck silent by the sight of an aging massive crater."
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     c2 "What happened here?"
     c1 "Nothing good, I bet"
     mc "I can see a person over there, we should ask them for any leads."
 
     "The party approaches a mysterious girl staring morosely at the crater."
-
+    
+    show pd neu
     mg "..it's been over twenty years since then, huh"
     mc "Excuse me, what are you talking to yourself about? Perhaps \"that event\"?"
 
@@ -251,7 +268,7 @@ label templeoftime:
     c2 "Where are we?"
 
     "\"You're at the Temple of Time,\" a voice responds"
-
+    show life neu
     mc "Who are you?"
     gol "I am the Goddess of Life. I know why you have come."  
     
@@ -272,6 +289,9 @@ label templeoftime:
 label forest:
     scene bg forest
     with fade
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
     "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
     mc "Well I guess we set off now!"
@@ -279,31 +299,36 @@ label forest:
     c2 "Yes, this is quite a hopeless quest. But look around you! The world is teeming with beauty. Don’t you want to share this sight with everyone who is stuck within the walls? And what’s the worst that could happen? After all, we can’t die!"
     mc "Indeed. It’s far too early to get discouraged now. Come, let us explore this beautiful world."
     "You wander through the forest for some time."
-    #Insert boar image
+    show boar neu #right, facing left
     extend " Suddenly, a wild boar charges out of the forest and attacks!"
     "Luckily, all three of you are well equipped with tools and healthy."
     extend " However, the encounter with the boar proves much more difficult than one would anticipate because the boar cannot be killed, merely wounded."
     "Eventually you tire out the boar and he retreats."
-    #Remove boar image
+    #Remove boar image!!!
     "However, much time has passed and the sun is starting to set."
     extend " You eat some of the food rations that you set out with, which helps heal you from the wounds acquired during the boar fight."
-    c2 "Hey guys, it’s been a long day. Why don’t we climb up into some trees and call it wraps?"
+    c2 "Hey guys, it’s been a long day. Why don’t we climb up into some trees and call it wraps?" #turns left towards c1
     c1 "Are you kidding? We can’t sleep in trees. That’s too close to the skies... and the dragons. We should continue on. MC, what do you think?"
 
     menu:
         "Sleep in the trees": #maybe increase the time counter?
-            #tree image
             scene bg treetop
             with fade
             "You climb up onto a tree, and set up a hammock of sorts. It’s uncomfortable, but it’ll do."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
-            #abandoned city image
+            scene bg abandonedvillage2
+            with fade
+            show kun neu #most left, facing right
+            show chan neu #mid, facing right
+            show mcg neu #least left, facing right
             "Wow! You stumbled upon an abandoned village."
             jump abandonedvillage
         "Continue forward":
-            #abandoned city image
             scene bg abandonedvillage2
             with fade
+            show kun neu #most left, facing right
+            show chan neu #mid, facing right
+            show mcg neu #least left, facing right
             "You reach an abandoned village just before the sun sets. How lucky! The three of you find a house to sleep in and spend the night."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             jump abandonedvillage
@@ -325,17 +350,18 @@ label abandonedvillage:
 label clearing:
     scene bg clearing2
     with fade
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     "Eventually, you reach a clearing. It has been a long day of journeying, and you and your companions are all tired."
     extend " Suddenly, a giant centipede attacks you!"
-    #Insert picture of giant centipede
+    show centipede neu #facing left on the right
     "You try to fight back, but the three of you are exhausted. You are less so trying to attack, and more so trying not to get mauled."
-
-    #Insert DRAGON picture***
+    #*****Insert DRAGON picture***
     "A dragon SWOOPS in from the sky. The three of you cower in fear."
     "Instead, the dragon grabs hold of the giant centipede, and you have been saved."
     "Your heart is still pounding from the sight of the giant beast."
     extend " You can continue travelling towards..."
-
     menu: 
         "The jungle where the dragon was headed":
             jump gooddragons
@@ -359,6 +385,9 @@ label gooddragons:
 label goodcityfront:
     scene bg goodcityfront2
     with fade
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
     "Nevertheless, you decide to cautiously approach the city."
     "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
     menu:
@@ -379,6 +408,10 @@ label goodcityinterior:
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
     scene bg throneroom
     with fade
+    show kun neu #most left, facing right
+    show chan neu #mid, facing right
+    show mcg neu #least left, facing right
+    #*** INSERT DRAGON PICTURE FACING LEFT ON THE RIGHT***
     gdr "Hello tiny young ones."
     c2 "Wow! How are you talking to us?"
     gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
@@ -406,6 +439,10 @@ label goodcitycenter:
         "Library":
             scene bg library2
             with fade
+                show kun neu #most left, facing right
+                show chan neu #mid, facing right
+                show mcg neu #least left, facing right
+                #*** INSERT DRAGON PICTURE ***
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
             c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
@@ -447,14 +484,18 @@ label indistortedspace:
     extend " and on..."
     extend " and on..."
     c2 "EEK! I bumped into something."
+    show chan neu
     "\"Who has entered this dreary realm, the graveyard for gods?\""
     c1 "More like we should be asking who YOU are."
+    show kun neu
     mc "Relax c1. We are here to restore death."
+    show mcg neu
     "The figure laughes a slightly maniacal laugh. \"You what?\" Ahahahahaha"
     "\"You all must be mad. Entirely mad.\""
     "\"People search to banish death for ages, and within 20 years, people want to bring death back?\""
     "\"Mad. Entirely mad. The entire lot of you.\""
     death " I came here out of self-sacrifice and you humans are telling me that you want me BACK?"
+    show death neu
     extend " But you know what? I'll entertain you."
     death "Luckily for you, this place is horribly uncomfortable and I'm getting quite bored."
     death "So how are you going to get us out?"
