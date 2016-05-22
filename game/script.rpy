@@ -4,6 +4,17 @@
 # eg. image eileen happy = "eileen_happy.png"
 image bg test = ".jpg"
 image bg default = ".jpg"
+image bg forest = "forest.jpg"
+image bg treetop = "treetop.jpg"
+image bg abandonedvillage2 = "abandoned village.jpg"
+image bg clearing2 = "clearing.jpg"
+image bg crossroad2 = "crossroad.jpg"
+image bg goodcityfront2 = "good dragon city gate.jpg"
+image bg goodcityfar2 = "good dragon city distant.jpg"
+image bg goodcityinterior2 = "good dragon city interior.jpg"
+image bg throneroom = "throneroom.jpg"
+image bg library2 = "library.jpg"
+image bg indistortedspace2 = "distorted space.jpg"
 
 image mc test = ".jpg"
 image mc defauklt = ".jpg"
@@ -215,6 +226,7 @@ label templeoftime:
     jump indistortedspace
 
 label forest:
+    scene bg forest
     "You set out into the wild. It’s the first time you’ve seen the sky in ages since the remainder of humanity has been crammed into the walled city for protection."
     "The sky is surprising clear and beautiful. Around you is a green forest and you can see the komorebi as light filters through the leaves. Birds are chirping, and frankly, it looks like a typical idyllic fantasy forest."
     mc "Well I guess we set off now!"
@@ -236,6 +248,7 @@ label forest:
     menu:
         "Sleep in the trees": #maybe increase the time counter?
             #tree image
+            scene bg treetop
             "You climb up onto a tree, and set up a hammock of sorts. It’s uncomfortable, but it’ll do."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             #abandoned city image
@@ -243,11 +256,13 @@ label forest:
             jump abandonedvillage
         "Continue forward":
             #abandoned city image
+            scene bg abandonedvillage2
             "You reach an abandoned village just before the sun sets. How lucky! The three of you find a house to sleep in and spend the night."
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
             jump abandonedvillage
             
 label abandonedvillage:
+    scene bg abandonedvillage2
     "For the next few days, you wander around the area, making the abandoned village your base."
     extend " During one of those days, you find a shining rock and decide to take it for luck’s sake."
     "After several days with no leads, you are faced with the decision of continuing forwards, or staying at your mini basecamp and gathering supplies."
@@ -260,6 +275,7 @@ label abandonedvillage:
             jump clearing
 
 label clearing:
+    scene bg clearing2
     "Eventually, you reach a clearing. It has been a long day of journeying, and you and your companions are all tired."
     extend " Suddenly, a giant centipede attacks you!"
     #Insert picture of giant centipede
@@ -279,7 +295,7 @@ label clearing:
             jump crossroad
 
 label gooddragons:
-    #Insert good dragon jungle city
+    scene bg goodcityfar2
     "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
     menu:
         "Flee from the city":
@@ -292,9 +308,9 @@ label gooddragons:
             jump goodcityfront
 
 label goodcityfront:
+    scene bg goodcityfront2
     "Nevertheless, you decide to cautiously approach the city."
     "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
-    #*Insert ROAR sound clip*
     menu:
         "FLEE":
             jump deadend
@@ -306,9 +322,11 @@ label goodcityfront:
         #    jump crossroad
         
 label goodcityinterior:
+    scene bg goodcityinterior2
     "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
     "You follow the gatekeeper towards what appears to be the center spire of the city."
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
+    scene bg throneroom
     gdr "Hello tiny young ones."
     c2 "Wow! How are you talking to us?"
     gdr "You know, not all dragons hate humans. Honestly, your kind is really small and bony. Really quite a pain to eat."
@@ -327,11 +345,13 @@ label goodcityinterior:
     jump goodcitycenter
 
 label goodcitycenter:
+    scene bg goodcityinterior2
     menu:
         "Fountain":
             "You see many dragons gathered around a giant fountain."
             jump goodcitycenter
         "Library":
+            scene bg library2
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
             c2 "Heehee that makes me feel kinda special." #smiling ^^ sprite
@@ -357,6 +377,7 @@ label goodcitycenter:
             jump crossroad
 
 label indistortedspace:
+    scene bg indistortedspace2
     "You feel like you are floating, yet CRUSHED by the pressure at the same time."
     extend " You are burning and freezing."
     extend " You are in pain, but also numb."
