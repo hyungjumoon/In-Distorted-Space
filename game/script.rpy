@@ -13,16 +13,17 @@ image bg goodcityfront2 = "good dragon city gate.jpg"
 image bg goodcityfar2 = "gdcd.jpeg"
 image bg goodcityinterior2 = "good dragon city interior.jpg"
 image bg throneroom = "throneroom.jpg"
-image bg library2 = "library.png"
+image bg library2 = "library.jpg"
 image bg indistortedspace2 = "distorted space.jpg"
-image bg inn2 = "shop2.png"
+image bg inn2 = "shop2.jpg"
 image bg refugeetown2 = "rivertown3.jpg"
-image bg crater = "Crater.png"
+image bg crater = "Crater.jpg"
 image bg templeoftime2 = "templeoftime.png"
 image bg darktown = "darktown.jpg"
 
-image mc test = ".jpg"
-image mc defauklt = ".jpg"
+image mc test = "test.png"
+image mc test flip = im.Flip ("test.png")
+image mc defauklt = ".png"
 
 # Declare characters used by this game.
 define mc = Character("Main Character") #chhange this, add color
@@ -50,6 +51,8 @@ label start:
 
     scene bg black
     with fade
+    show mc test at right
+    with dissovle
     "Nobody really noticed when Death died."
     "It was an end to a great universal truth, yes."
     extend " It was the end to the great question that dogged in our footsteps, sooner or later - when comes our time?"
@@ -77,6 +80,8 @@ label start:
     "Still, perhaps it was then that we began to realize this immortality business wasn’t all roses..."
     scene bg darktown
     with fade
+    show mc test flip at left
+    with dissolve
     "They watch you among the maze of planks that’s Main Street."
     "Grime-filled eyes sifting through the forest of dirty men and women to stare, a horde of bodies lined up alongside the weed-choked road."
     "Since the end of Death, maintaining the City had become difficult."
