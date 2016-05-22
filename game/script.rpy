@@ -104,14 +104,21 @@ transform gate:
     xpos 1.0
 
 transform gking:
-    ypos 0.175
+    ypos 0.15
     xanchor 0.7
     xpos 1.0
 
 transform glib:
-    ypos 0.175
+    ypos 0.15
     xanchor 0.7
     xpos 1.0
+
+transform deathright:
+    yanchor 0.4
+    ypos 0.4
+    xanchor 0.7
+    xpos 1.0
+
 
 # The game starts here.
 label start:
@@ -123,7 +130,7 @@ label start:
     $ time = 0
     $ goodDragTown=False
     #chnage for test pruposes
-    jump goodcitycenter
+    jump indistortedspace
 
 label introduction:
     scene bg black
@@ -313,6 +320,8 @@ label refugeetown:
     show inn neu flip at midleft
     with moveoutright
 
+    stop music
+
     jump templeoftime
 
 label baddragons:
@@ -322,6 +331,7 @@ label baddragons:
 label templeoftime:
     scene bg crater
     with fade
+    play music "music/Temple of Time F0 Grief.mp3"
     "After a long and arduous travel, the party arrives at the location marked on the map."
     "Once there, the party is struck silent by the sight of an aging massive crater."
     show kun neu flip at midleft
@@ -370,9 +380,11 @@ label templeoftime:
     mc "What?! Who are you?! \"Vanquished himself\"?!"
     mg "Find the truth yourself..."
     
+    stop music
     scene bg crater
     with moveouttop
 
+    play music "music/GOL SSS.mp3"
     "After a blur and dizzying sway, you and your companions find yourself on the floor of the Temple of Time. The mysterious girl has disappeared."
     
     scene bg templeoftime2
@@ -417,12 +429,13 @@ label templeoftime:
     scene bg templeoftime2
     show life neu at midright
     with fade
-    
+    stop music
     jump indistortedspace
 
 label forest:
     scene bg forest
     with fade
+    play music "music/Forest Kimi ga Yobu Namae.mp3"
     show kun neu at midright
     with moveinright
     show chan neu at midcenter
@@ -446,7 +459,8 @@ label forest:
     show chan neu at midrighty
     show mcg neu at midlefty
     with move
-
+    stop music
+    play music "music/Boar Katanagatari.mp3"
     show boar neu at boary #right, facing left
     with moveinleft
 
@@ -454,6 +468,8 @@ label forest:
     "Luckily, all three of you are well equipped with tools and healthy."
     extend " However, the encounter with the boar proves much more difficult than one would anticipate because the boar cannot be killed, merely wounded."
     "Eventually you tire out the boar and he retreats."
+    stop music
+    play music "music/Post boar Bakemonogatari.mp3"
     scene bg forest
     show kun neu at midright
     show chan neu at midrighty
@@ -484,6 +500,7 @@ label forest:
             "Wow! You stumbled upon an abandoned village."
             scene bg black
             with fade
+            stop music
             jump abandonedvillage
         "Continue forward":
             scene bg abandonedvillage2
@@ -496,9 +513,11 @@ label forest:
             scene bg black
             with fade
             "The next morning, you wake up early and eat some breakfast and set out on your quest again."
+            stop music
             jump abandonedvillage
             
 label abandonedvillage:
+    play music "music/Abandoned Village 2 SAW.mp3"
     scene bg abandonedvillage2
     show kun neu at midright
     show chan neu at midcenter
@@ -512,14 +531,17 @@ label abandonedvillage:
     with moveoutright
     menu:
         "Continue on":
+            stop music
             jump clearing
         "Stay at the abandoned village": #potential time counter +1
             "After wandering for another several days and finding nothing of interest, you decide to continue on."
+            stop music
             jump clearing
 
 label clearing:
     scene bg clearing2
     with fade
+    play music "music/Clearing Kara no Kyoukai.mp3"
     show kun neu flip at midleft #most left, facing right
     show chan neu flip at midcenter #mid, facing right
     show mcg neu flip at midright #least left, facing right
@@ -532,9 +554,9 @@ label clearing:
     show chan neu flip at midlefty #mid, facing right
     show mcg neu flip at midrighty #least left, facing right
     with move
-    
+    stop music
     extend " Suddenly, a giant centipede attacks you!"
-
+    play music "music/CENTIPEDE AOT.mp3"
     show centipede neu at centi #facing left on the right
     with moveinright
     
@@ -561,28 +583,34 @@ label clearing:
     with moveoutleft
     menu: 
         "The jungle where the dragon was headed":
+            stop music
             jump gooddragons
         "Continue traveling in the direction that you were headed":
             "After travelling, you find that you have reached a crossroads."
+            stop music
             jump crossroad
 
 label gooddragons:
     scene bg goodcityfar2
     with fade
+    play music "music/Good City Far Madoka.mp3"
     "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
     menu:
         "Flee from the city":
             $ time += 1 
             "After travelling, you find that you have reached a crossroads."
+            stop music
             jump crossroad
         "Approach the city":
             c1 "Are you crazy? You know that dragons EAT PEOPLE right? God you must be insane."
             c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
+            stop music
             jump goodcityfront
 
 label goodcityfront:
     scene bg goodcityfront2
     with fade
+    play music "music/Good city Front Owari no Seraph OST.mp3"
     show kun neu flip at midleft #most left, facing right
     with moveinright
     show chan neu flip at midcenter #mid, facing right
@@ -603,11 +631,13 @@ label goodcityfront:
             scene bg goodcityfront2
             show gdk neu at gate
             with moveoutleft
+            stop music
             jump deadend
         "Present the Glowing Rock":
             "The dragon seems pleased, and escorts you into the city."
             scene bg goodcityfront2
             with moveoutright
+            stop music
             jump goodcityinterior
         #"Leave behind c1, whose whining was not helpful anyway and FLEE"
         #    "After running away for your life, you and c2 find that you have arrived in front of a crossroads."
@@ -616,6 +646,7 @@ label goodcityfront:
 label goodcityinterior:
     scene bg goodcityinterior2
     with fade
+    play music "music/Good City Interior Soredemo.mp3"
     "You are inside the gorgeous marble city. Magestic dragons fly all around you and you marvel at their horrible beauty."
     "You follow the gatekeeper towards what appears to be the center spire of the city."
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
@@ -665,6 +696,8 @@ label goodcitycenter:
             "You see many dragons gathered around a giant fountain."
             jump goodcitycenter
         "Library":
+            stop music
+            play music "music/Library Steins Gate.mp3"
             scene bg goodcityinterior2
             with moveoutright
             scene bg library2
@@ -696,6 +729,7 @@ label goodcitycenter:
             scene bg library2
             show lib neu at glib
             with moveoutleft
+            stop music
             jump templeoftime
         "Nursery":
             "You see a bunch of baby dragons. D'awww how cute."
@@ -705,6 +739,7 @@ label goodcitycenter:
             "You walk away from the magestic city and wander until you reach a crossroads."
             scene bg goodcityinterior2
             with moveoutright
+            stop music
             jump crossroad
 
 label indistortedspace:
@@ -724,21 +759,21 @@ label indistortedspace:
     extend " and on..."
     extend " and on..."
     c2 "EEK! I bumped into something."
-    show chan neu at midleft
+    show chan neu flip at midleft
     with fade
     "\"Who has entered this dreary realm, the graveyard for gods?\""
     c1 "More like we should be asking who YOU are."
-    show kun neu at midlefty
+    show kun neu flip at midlefty
     with fade
     mc "Relax c1. We are here to restore death."
-    show mcg neu at midrighty
+    show mcg neu flip at midrighty
     with fade
     "The figure laughes a slightly maniacal laugh. \"You what?\" Ahahahahaha"
     "\"You all must be mad. Entirely mad.\""
     "\"People search to banish death for ages, and within 20 years, people want to bring death back?\""
     "\"Mad. Entirely mad. The entire lot of you.\""
     death " I came here out of self-sacrifice and you humans are telling me that you want me BACK?"
-    show death neu at midright
+    show desu neu at deathright
     extend " But you know what? I'll entertain you."
     death "Luckily for you, this place is horribly uncomfortable and I'm getting quite bored."
     death "So how are you going to get us out?"
@@ -772,17 +807,27 @@ label deadend:
 label failend:
     scene bg black
     with fade
+    play music "music/Fail End Angel Beats.mp3"
     "You failed. You took so long that by the time death was revived, the entire planetary ecosystem had collapsed. The dragons captured all the humans and placed them in farms."
     extend " The tenuous reliance by dragons on human farms for sustenance meant that when humans started dying again, the dragons died of starvation."
     "Every human on earth was hunted down until there were none left. And the remaining dragons scavenged for prey until they were driven to cannibalism."
-    return
+    stop music
+    jump credits
 
 label goodend:
     scene bg black
     with fade
+    play music "music/Good End Ebb and Flow.mp3"
     "With Death returning to the world, balance has been restored. The Dragons will mostly die out because they don't have enough sustenance."
     extend "Meanwhile, in the last stronghold of humanity there will be a decrease in population because the elderly and sick have died."
     "However, as per usual, the resilient race known as humanity will bounce back, and everything eventually returns to the status quo before In Broken Time."
+    stop music
+    jump credits
+
+label credits:
+    "rofl"
+    play music "music/Credits ODDS&ENDS (piano).mp3"
+    "hi"
     return
 
 label deocide:
