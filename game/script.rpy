@@ -17,7 +17,7 @@ image bg library2 = "library.jpg"
 image bg indistortedspace2 = "distorted space.jpg"
 image bg inn2 = "shop2.jpg"
 image bg refugeetown2 = "rivertown3.jpg"
-image bg crater = "Crater.jpg"
+image bg crater = "Crater.png"
 image bg templeoftime2 = "templeoftime.png"
 image bg darktown = "darktown.jpg"
 image bg treetopsunrise = "treetopsunrise.jpg"
@@ -84,6 +84,11 @@ transform boary:
     ypos 0.45
     xpos -0.1
 
+transform centi:
+    ypos 0.4
+    xanchor 0.7
+    xpos 1.0
+
 # The game starts here.
 label start:
     #various variable names, to be tested
@@ -94,7 +99,7 @@ label start:
     $ time = 0
     $ goodDragTown=False
     #chnage for test pruposes
-    jump clearing
+    jump goodcityinterior
 
 label introduction:
     scene bg black
@@ -477,6 +482,7 @@ label abandonedvillage:
             "After wandering for another several days and finding nothing of interest, you decide to continue on."
             jump clearing
 
+#hunting drag first
 label clearing:
     scene bg clearing2
     with fade
@@ -495,7 +501,7 @@ label clearing:
     
     extend " Suddenly, a giant centipede attacks you!"
 
-    show centipede neu at midright #facing left on the right
+    show centipede neu at centi #facing left on the right
     with moveinright
     
     "You try to fight back, but the three of you are exhausted. You are less so trying to attack, and more so trying not to get mauled."
@@ -520,6 +526,7 @@ label clearing:
 
 label gooddragons:
     scene bg goodcityfar2
+    with fade
     "You find yourself faced with a majestic marble city in the Jungle... with dragons flying around it. The sight amazes and terrifies you at the same time. Do you..."
     menu:
         "Flee from the city":
@@ -531,14 +538,20 @@ label gooddragons:
             c2 "Oh, maybe they’re friendly. After all, that one dragon back then saved our lives!"
             jump goodcityfront
 
+#gatekeeper
 label goodcityfront:
     scene bg goodcityfront2
     with fade
-    show kun neu #most left, facing right
-    show chan neu #mid, facing right
-    show mcg neu #least left, facing right
+    show kun neu flip at midleft #most left, facing right
+    with moveinright
+    show chan neu flip at midcenter #mid, facing right
+    with moveinright
+    show mcg neu flip at midright #least left, facing right
+    with moveinright
     "Nevertheless, you decide to cautiously approach the city."
+    
     "At the front you meet a gatekeeper who ROARS FEROCIOUSLY at you"
+    
     menu:
         "FLEE":
             jump deadend
@@ -548,7 +561,8 @@ label goodcityfront:
         #"Leave behind c1, whose whining was not helpful anyway and FLEE"
         #    "After running away for your life, you and c2 find that you have arrived in front of a crossroads."
         #    jump crossroad
-        
+
+#dragon king
 label goodcityinterior:
     scene bg goodcityinterior2
     with fade
@@ -557,9 +571,12 @@ label goodcityinterior:
     "You approach a regal looking dragon. Suddenly, a voice appears in your head"
     scene bg throneroom
     with fade
-    show kun neu #most left, facing right
-    show chan neu #mid, facing right
-    show mcg neu #least left, facing right
+    show mcg neu flip at midright #least left, facing right
+    with moveinleft
+    show chan neu flip at midcenter #mid, facing right
+    with moveinleft
+    show kun neu flip at midleft #most left, facing right
+    with moveinleft
     #*** INSERT DRAGON PICTURE FACING LEFT ON THE RIGHT***
     gdr "Hello tiny young ones."
     c2 "Wow! How are you talking to us?"
@@ -576,21 +593,37 @@ label goodcityinterior:
     extend " So realize that many of the dragons will be cautious. In fact, some of our youngsters may never have seen any humans at all."
     c2 "Will do! I can't believe we're in a dragon city!"
     gdr "Indeed. Here, let me show you to the city center."
+
+    scene bg throneroom
+    with moveoutleft
+
     jump goodcitycenter
 
+#librarian
 label goodcitycenter:
     scene bg goodcityinterior2
     with fade
+    show mcg neu flip at midright #least left, facing right
+    with moveinleft
+    show chan neu flip at midcenter #mid, facing right
+    with moveinleft
+    show kun neu flip at midleft #most left, facing right
+    with moveinleft
     menu:
         "Fountain":
             "You see many dragons gathered around a giant fountain."
             jump goodcitycenter
         "Library":
+            scene bg goodcityinterior2
+            with moveoutright
             scene bg library2
             with fade
-            show kun neu #most left, facing right
-            show chan neu #mid, facing right
-            show mcg neu #least left, facing right
+            show mcg neu flip at midright #least left, facing right
+            with moveinleft
+            show chan neu flip at midcenter #mid, facing right
+            with moveinleft
+            show kun neu flip at midleft #most left, facing right
+            with moveinleft
             #*** INSERT DRAGON PICTURE ***
             "The smell of ancient books hits you as light filters in from above. The library emanates a feeling of ancient wisdom and power."
             gdl "Humans! I have not seen any of your kind in eons."
@@ -607,6 +640,8 @@ label goodcitycenter:
             mc "Thank you greatly. We truly appreciate your wisdom."
             "You set off towards the marked location on the map."
             $ time -= 1 
+            scene bg library2
+            with moveoutleft
             jump templeoftime
         "Nursery":
             "You see a bunch of baby dragons. D'awww how cute."
@@ -614,6 +649,8 @@ label goodcitycenter:
         "Leave the city":
             c1 "We had nothing to do in a city of DRAGONS anyway. Good riddance."
             "You walk away from the magestic city and wander until you reach a crossroads."
+            scene bg goodcityinterior2
+            with moveoutright
             jump crossroad
 
 label indistortedspace:
